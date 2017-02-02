@@ -75,7 +75,8 @@ def create_table(table_name, csv_headers):
 
     create_table_command = """
         CREATE TABLE {t_name} (
-                {c_names}
+            id SERIAL PRIMARY KEY,
+            {c_names}
             );
         """
     sql_command = create_table_command.format(t_name=table_name, c_names=sql_c_names)
