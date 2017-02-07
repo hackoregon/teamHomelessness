@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ocu#n)nn=nkht9k)&!w3u7)scqm=49(w%((s$85ql(qq(g)m)#'
+SECRET_KEY = 'vr98ul$5a(#3v(j^o)47n$+9rcrdz#fkv8&av$3*6n!a#3d=ys'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'homelessApp'
+    'homelessApp',
 ]
 
 MIDDLEWARE = [
@@ -79,13 +79,14 @@ WSGI_APPLICATION = 'homelessAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': project_config.default['NAME'],
-        'HOST': project_config.default['HOST'],
+        'NAME': project_config.local['NAME'],
+        'HOST': project_config.local['HOST'],
         'PORT': 5432,
-        'USER': project_config.default['USER'],
-        'PASSWORD': project_config.default['PASSWORD'], 
+        'USER': project_config.local['USER'],
+        'PASSWORD': project_config.local['PASSWORD'], 
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
