@@ -15,7 +15,7 @@ class ListDisabilityTest(TestCase):
     def test_response_returns_correct_objects(self):
         response = self.c.get("/homeless/disability/?format=json")
         json_content = json.loads(response.content.decode('utf-8'))
-
+        
         # 45 records in disability fixture
         self.assertEqual(len(json_content), 45)
 
@@ -73,7 +73,7 @@ class ListVeteransTest(TestCase):
 
 class RootAPITest(TestCase):
 
-    def setUp():
+    def setUp(self):
         self.c = Client()
 
     def test_get_request_sends_200(self):

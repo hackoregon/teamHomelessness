@@ -1,8 +1,12 @@
 from django.conf.urls import url
 from . import views
 
+from rest_framework_swagger.views import get_swagger_view
+
+schema_view = get_swagger_view(title='Team Homelessness API')
+
 urlpatterns = [
-    url(r'^$', views.Team_homelessness_api_root, name='root'),
+    url(r'^$', schema_view),
     url(r'disability/$', views.ListDisability.as_view(), name='disability-list'),
     url(r'^ethnicity/$', views.ListEthnicity.as_view(), name='ethnicity-list'),
     url(r'^gender/$', views.ListGender.as_view(), name='gender-list'),
