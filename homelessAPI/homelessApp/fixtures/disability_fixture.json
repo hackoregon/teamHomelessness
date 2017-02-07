@@ -1,0 +1,90 @@
+[
+    {
+        "model": "homelessApp.Disability",
+        "id": 1,
+        "fields": {
+            "disabilitytype": "mentalHealth",
+            "sheltertype": "unsheltered",
+            "count": 363,
+            "year": 2015,
+            "page": 27
+        }
+    },
+    {
+        "model": "homelessApp.Disability",
+        "id": 2,
+        "fields": {
+            "disabilitytype": "mentalHealth",
+            "sheltertype": "emergencyShelter",
+            "count": 163,
+            "year": 2015,
+            "page": 27
+        }
+    },
+    {
+        "model": "homelessApp.Disability",
+        "id": 3,
+        "fields": {
+            "disabilitytype": "mentalHealth",
+            "sheltertype": "transitionalHousing",
+            "count": 261,
+            "year": 2015,
+            "page": 27
+        }
+    },
+    {
+        "model": "homelessApp.Disability",
+        "id": 4,
+        "fields": {
+            "disabilitytype": "substanceAbuse",
+            "sheltertype": "unsheltered",
+            "count": 351,
+            "year": 2015,
+            "page": 27
+        }
+    },
+    {
+        "model": "homelessApp.Disability",
+        "id": 5,
+        "fields": {
+            "disabilitytype": "substanceAbuse",
+            "sheltertype": "emergencyShelter",
+            "count": 143,
+            "year": 2015,
+            "page": 27
+        }
+    },
+    {
+        "model": "homelessApp.Disability",
+        "id": 6,
+        "fields": {
+            "disabilitytype": "substanceAbuse",
+            "sheltertype": "transitionalHousing",
+            "count": 570,
+            "year": 2015,
+            "page": 27
+        }
+    },
+    {
+        "model": "homelessApp.Disability",
+        "id": 7,
+        "fields": {
+            "disabilitytype": "developmental",
+            "sheltertype": "unsheltered",
+            "count": 12,
+            "year": 2015,
+            "page": 27
+        }
+    },
+    {
+        "model": "homelessApp.Disability",
+        "id": 8,
+        "fields": {
+            "disabilitytype": "developmental",
+            "sheltertype": "emergencyShelter",
+            "count": 8,
+            "year": 2015,
+            "page": 27
+        }
+    }
+]
