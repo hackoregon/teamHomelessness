@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_nose',
     'homelessApp',
 ]
 
@@ -125,3 +126,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# testing setup
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+# auto includes these command line args that are run with nose 
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-package=homelessApp',
+    '--cover-html'
+]
+
+
+
+
+

@@ -2,9 +2,8 @@ from django.test import TestCase, Client
 import json
 
 
-class ListDisabilityTest(TestCase):
-    # 8 fake records in the fixture data 
-    fixtures = ["homelessApp/fixtures/disability_fixture.json"]
+class ListDisabilityTest(TestCase): 
+    fixtures = ["APP_FIXTURE"]
 
     def setUp(self):
         self.c = Client()
@@ -17,12 +16,12 @@ class ListDisabilityTest(TestCase):
         response = self.c.get("/homeless/disability/?format=json")
         json_content = json.loads(response.content.decode('utf-8'))
 
-        self.assertEqual(len(json_content), 8)
+        # 45 records in disability fixture
+        self.assertEqual(len(json_content), 45)
 
 
 class ListEthnicityTest(TestCase):
-    # 25 fake records need to add better mix of years 
-    fixtures = ["homelessApp/fixtures/ethnicity_fixture.json"]
+    fixtures = ["APP_FIXTURE"]
 
     def setUp(self):
         self.c = Client()
@@ -69,6 +68,16 @@ class ListVeteransTest(TestCase):
 
     def test_get_request_sends_200(self):
         response = self.c.get("/homeless/veterans/")
+        self.assertEqual(response.status_code, 200)
+
+
+class RootAPITest(TestCase):
+
+    def setUp():
+        self.c = Client()
+
+    def test_get_request_sends_200(self):
+        response = self.c.get("/homeless/")
         self.assertEqual(response.status_code, 200)
 
 
