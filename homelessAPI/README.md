@@ -12,7 +12,7 @@ Run these commands in the outer most level of the repo
   
 ### 3. Install depencencies with pip
 - Install depedencies from requirements.txt: 
-  - pip install -r requirements.txt
+  - ```pip install -r requirements.txt```
   
 ### 4. Create a project_config.py file 
 - In order for the API to be able to access the AWS DB you need to make a local project_config.py file in the homelessAPI/ directory. It should be in the same directory as the settings.py file. In this file create an object that has the connection information to our AWS DB and the Django Secret Key. See example below: 
