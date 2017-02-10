@@ -7,6 +7,7 @@ from . import serializers
 from . import models 
 
 
+# don't need this root view if team decides to use swagger
 @api_view(['GET'])
 def Team_homelessness_api_root(request, format=None):
     "The following endpoints are available"
@@ -28,15 +29,16 @@ def Team_homelessness_api_root(request, format=None):
 
         'Veterans table list': 
         reverse('homeless:veterans-list', request=request, format=format),        
-
     })
 
 
 class ListDisability(generics.ListAPIView):
+    """Add documentation for endpoint use here"""
     queryset = models.Disability.objects.all()
     serializer_class = serializers.DisabilitySerializer
 
 class ListEthnicity(generics.ListAPIView):
+    """Add documentation for endpoint use here"""
     queryset = models.Ethnicity.objects.all()
     serializer_class = serializers.EthnicitySerializer
 

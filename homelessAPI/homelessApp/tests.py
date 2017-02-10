@@ -15,7 +15,7 @@ class ListDisabilityTest(TestCase):
     def test_response_returns_correct_objects(self):
         response = self.c.get("/homeless/disability/?format=json")
         json_content = json.loads(response.content.decode('utf-8'))
-        
+
         # 45 records in disability fixture
         self.assertEqual(len(json_content), 45)
 
