@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'vr98ul$5a(#3v(j^o)47n$+9rcrdz#fkv8&av$3*6n!a#3d=ys'
+SECRET_KEY = project_config.DJANGO_SECRET
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'homelessAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': project_config.local['NAME'],
-        'HOST': project_config.local['HOST'],
+        'NAME': project_config.AWS['NAME'],
+        'HOST': project_config.AWS['HOST'],
         'PORT': 5432,
-        'USER': project_config.local['USER'],
-        'PASSWORD': project_config.local['PASSWORD'], 
+        'USER': project_config.AWS['USER'],
+        'PASSWORD': project_config.AWS['PASSWORD'], 
     }
 }
 
