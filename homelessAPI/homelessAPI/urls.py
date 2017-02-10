@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from simpleAPI import views 
+from django.conf.urls import include
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^ethnicity/$', views.ListEthnicity.as_view()),
+    url(r'^homeless/', include('homelessApp.urls', namespace='homeless'))
 ]

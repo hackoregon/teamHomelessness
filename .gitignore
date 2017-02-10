@@ -2,3 +2,5 @@ project_config.py
 *.pyc
 venv3
 .DS_Store
+.*
+cover

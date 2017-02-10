@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ocu#n)nn=nkht9k)&!w3u7)scqm=49(w%((s$85ql(qq(g)m)#'
+SECRET_KEY = project_config.DJANGO_SECRET
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'simpleAPI'
+    'rest_framework_swagger',
+    'django_nose',
+    'homelessApp',
 ]
 
 MIDDLEWARE = [
@@ -79,13 +81,14 @@ WSGI_APPLICATION = 'homelessAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': project_config.default['NAME'],
-        'HOST': project_config.default['HOST'],
+        'NAME': project_config.AWS['NAME'],
+        'HOST': project_config.AWS['HOST'],
         'PORT': 5432,
-        'USER': project_config.default['USER'],
-        'PASSWORD': project_config.default['PASSWORD'], 
+        'USER': project_config.AWS['USER'],
+        'PASSWORD': project_config.AWS['PASSWORD'], 
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
@@ -124,3 +127,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# testing setup
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+# auto includes these command line args that are run with nose 
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-package=homelessApp',
+    '--cover-html'
+]
+
+
+
+
+

@@ -1,0 +1,2875 @@
+[
+{
+    "model": "homelessApp.disability",
+    "pk": 1,
+    "fields": {
+        "disabilitytype": "mentalHealth",
+        "sheltertype": "unsheltered",
+        "count": 363,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 2,
+    "fields": {
+        "disabilitytype": "mentalHealth",
+        "sheltertype": "emergencyShelter",
+        "count": 163,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 3,
+    "fields": {
+        "disabilitytype": "mentalHealth",
+        "sheltertype": "transitionalHousing",
+        "count": 261,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 4,
+    "fields": {
+        "disabilitytype": "substanceAbuse",
+        "sheltertype": "unsheltered",
+        "count": 351,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 5,
+    "fields": {
+        "disabilitytype": "substanceAbuse",
+        "sheltertype": "emergencyShelter",
+        "count": 143,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 6,
+    "fields": {
+        "disabilitytype": "substanceAbuse",
+        "sheltertype": "transitionalHousing",
+        "count": 570,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 7,
+    "fields": {
+        "disabilitytype": "developmental",
+        "sheltertype": "unsheltered",
+        "count": 12,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 8,
+    "fields": {
+        "disabilitytype": "developmental",
+        "sheltertype": "emergencyShelter",
+        "count": 8,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 9,
+    "fields": {
+        "disabilitytype": "developmental",
+        "sheltertype": "transitionalHousing",
+        "count": 1,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 10,
+    "fields": {
+        "disabilitytype": "HIV",
+        "sheltertype": "unsheltered",
+        "count": 14,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 11,
+    "fields": {
+        "disabilitytype": "HIV",
+        "sheltertype": "emergencyShelter",
+        "count": 6,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 12,
+    "fields": {
+        "disabilitytype": "HIV",
+        "sheltertype": "transitionalHousing",
+        "count": 12,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 13,
+    "fields": {
+        "disabilitytype": "chronicHealth",
+        "sheltertype": "unsheltered",
+        "count": 120,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 14,
+    "fields": {
+        "disabilitytype": "chronicHealth",
+        "sheltertype": "emergencyShelter",
+        "count": 27,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 15,
+    "fields": {
+        "disabilitytype": "chronicHealth",
+        "sheltertype": "transitionalHousing",
+        "count": 51,
+        "year": 2015,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 16,
+    "fields": {
+        "disabilitytype": "mentalHealth",
+        "sheltertype": "unsheltered",
+        "count": 383,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 17,
+    "fields": {
+        "disabilitytype": "mentalHealth",
+        "sheltertype": "emergencyShelter",
+        "count": 185,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 18,
+    "fields": {
+        "disabilitytype": "mentalHealth",
+        "sheltertype": "transitionalHousing",
+        "count": 329,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 19,
+    "fields": {
+        "disabilitytype": "alcoholSubstanceAbuse",
+        "sheltertype": "unsheltered",
+        "count": 303,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 20,
+    "fields": {
+        "disabilitytype": "alcoholSubstanceAbuse",
+        "sheltertype": "emergencyShelter",
+        "count": 92,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 21,
+    "fields": {
+        "disabilitytype": "alcoholSubstanceAbuse",
+        "sheltertype": "transitionalHousing",
+        "count": 426,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 22,
+    "fields": {
+        "disabilitytype": "drugSubstanceAbuse",
+        "sheltertype": "unsheltered",
+        "count": 340,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 23,
+    "fields": {
+        "disabilitytype": "drugSubstanceAbuse",
+        "sheltertype": "emergencyShelter",
+        "count": 126,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 24,
+    "fields": {
+        "disabilitytype": "drugSubstanceAbuse",
+        "sheltertype": "transitionalHousing",
+        "count": 473,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 25,
+    "fields": {
+        "disabilitytype": "chronicSubstanceAbuse",
+        "sheltertype": "unsheltered",
+        "count": 516,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 26,
+    "fields": {
+        "disabilitytype": "chronicSubstanceAbuse",
+        "sheltertype": "emergencyShelter",
+        "count": 150,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 27,
+    "fields": {
+        "disabilitytype": "chronicSubstanceAbuse",
+        "sheltertype": "transitionalHousing",
+        "count": 567,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 28,
+    "fields": {
+        "disabilitytype": "physical",
+        "sheltertype": "unsheltered",
+        "count": 324,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 29,
+    "fields": {
+        "disabilitytype": "physical",
+        "sheltertype": "emergencyShelter",
+        "count": 131,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 30,
+    "fields": {
+        "disabilitytype": "physical",
+        "sheltertype": "transitionalHousing",
+        "count": 225,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 31,
+    "fields": {
+        "disabilitytype": "developmental",
+        "sheltertype": "unsheltered",
+        "count": 88,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 32,
+    "fields": {
+        "disabilitytype": "developmental",
+        "sheltertype": "emergencyShelter",
+        "count": 43,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 33,
+    "fields": {
+        "disabilitytype": "developmental",
+        "sheltertype": "transitionalHousing",
+        "count": 70,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 34,
+    "fields": {
+        "disabilitytype": "HIV",
+        "sheltertype": "unsheltered",
+        "count": 21,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 35,
+    "fields": {
+        "disabilitytype": "HIV",
+        "sheltertype": "emergencyShelter",
+        "count": 3,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 36,
+    "fields": {
+        "disabilitytype": "HIV",
+        "sheltertype": "transitionalHousing",
+        "count": 31,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 37,
+    "fields": {
+        "disabilitytype": "chronicHealth",
+        "sheltertype": "unsheltered",
+        "count": 324,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 38,
+    "fields": {
+        "disabilitytype": "chronicHealth",
+        "sheltertype": "emergencyShelter",
+        "count": 24,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 39,
+    "fields": {
+        "disabilitytype": "chronicHealth",
+        "sheltertype": "transitionalHousing",
+        "count": 80,
+        "year": 2013,
+        "page": 26
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 40,
+    "fields": {
+        "disabilitytype": "disablingCondition",
+        "sheltertype": "unsheltered",
+        "count": 937,
+        "year": 2011,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 41,
+    "fields": {
+        "disabilitytype": "disablingCondition",
+        "sheltertype": "emergencyShelter",
+        "count": 429,
+        "year": 2011,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 42,
+    "fields": {
+        "disabilitytype": "disablingCondition",
+        "sheltertype": "transitionalHousing",
+        "count": 979,
+        "year": 2011,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 43,
+    "fields": {
+        "disabilitytype": "disablingCondition",
+        "sheltertype": "unsheltered",
+        "count": 732,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 44,
+    "fields": {
+        "disabilitytype": "disablingCondition",
+        "sheltertype": "emergencyShelter",
+        "count": 0,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.disability",
+    "pk": 45,
+    "fields": {
+        "disabilitytype": "disablingCondition",
+        "sheltertype": "transitionalHousing",
+        "count": 0,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 1,
+    "fields": {
+        "ethnicity": "white ",
+        "sheltertype": "unsheltered",
+        "count": 1346,
+        "year": 15,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 2,
+    "fields": {
+        "ethnicity": "white",
+        "sheltertype": "emergencyShelter",
+        "count": 548,
+        "year": 15,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 3,
+    "fields": {
+        "ethnicity": "white ",
+        "sheltertype": "transitionalHousing",
+        "count": 723,
+        "year": 15,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 4,
+    "fields": {
+        "ethnicity": "popOfColor",
+        "sheltertype": "unsheltered",
+        "count": 708,
+        "year": 15,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 5,
+    "fields": {
+        "ethnicity": "popOfColor",
+        "sheltertype": "emergencyShelter",
+        "count": 406,
+        "year": 15,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 6,
+    "fields": {
+        "ethnicity": "popOfColor",
+        "sheltertype": "transitionalHousing",
+        "count": 363,
+        "year": 15,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 7,
+    "fields": {
+        "ethnicity": "AI",
+        "sheltertype": "unsheltered",
+        "count": 48,
+        "year": 15,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 8,
+    "fields": {
+        "ethnicity": "AI",
+        "sheltertype": "emergencyShelter",
+        "count": 19,
+        "year": 15,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 9,
+    "fields": {
+        "ethnicity": "AI",
+        "sheltertype": "transitionalHousing",
+        "count": 15,
+        "year": 15,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 10,
+    "fields": {
+        "ethnicity": "asian",
+        "sheltertype": "unsheltered",
+        "count": 24,
+        "year": 15,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 11,
+    "fields": {
+        "ethnicity": "asian",
+        "sheltertype": "emergencyShelter",
+        "count": 13,
+        "year": 15,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 12,
+    "fields": {
+        "ethnicity": "asian",
+        "sheltertype": "transitionalHousing",
+        "count": 22,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 13,
+    "fields": {
+        "ethnicity": "black",
+        "sheltertype": "unsheltered",
+        "count": 396,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 14,
+    "fields": {
+        "ethnicity": "black",
+        "sheltertype": "emergencyShelter",
+        "count": 239,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 15,
+    "fields": {
+        "ethnicity": "black",
+        "sheltertype": "transitionalHousing",
+        "count": 226,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 16,
+    "fields": {
+        "ethnicity": "latino",
+        "sheltertype": "unsheltered",
+        "count": 194,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 17,
+    "fields": {
+        "ethnicity": "latino",
+        "sheltertype": "emergencyShelter",
+        "count": 107,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 18,
+    "fields": {
+        "ethnicity": "latino",
+        "sheltertype": "transitionalHousing",
+        "count": 88,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 19,
+    "fields": {
+        "ethnicity": "hawaiian",
+        "sheltertype": "unsheltered",
+        "count": 46,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 20,
+    "fields": {
+        "ethnicity": "hawaiian",
+        "sheltertype": "emergencyShelter",
+        "count": 28,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 21,
+    "fields": {
+        "ethnicity": "hawaiian",
+        "sheltertype": "transitionalHousing",
+        "count": 12,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 22,
+    "fields": {
+        "ethnicity": "infoNotProvided",
+        "sheltertype": "unsheltered",
+        "count": 67,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 23,
+    "fields": {
+        "ethnicity": "infoNotProvided",
+        "sheltertype": "emergencyShelter",
+        "count": 43,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 24,
+    "fields": {
+        "ethnicity": "infoNotProvided",
+        "sheltertype": "transitionalHousing",
+        "count": 97,
+        "year": 2015,
+        "page": 18
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 25,
+    "fields": {
+        "ethnicity": "white",
+        "sheltertype": "unsheltered",
+        "count": 1389,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 26,
+    "fields": {
+        "ethnicity": "white",
+        "sheltertype": "emergencyShelter",
+        "count": 561,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 27,
+    "fields": {
+        "ethnicity": "white",
+        "sheltertype": "transitionalHousing",
+        "count": 1047,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 28,
+    "fields": {
+        "ethnicity": "popOfColor",
+        "sheltertype": "unsheltered",
+        "count": 711,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 29,
+    "fields": {
+        "ethnicity": "popOfColor",
+        "sheltertype": "emergencyShelter",
+        "count": 494,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 30,
+    "fields": {
+        "ethnicity": "popOfColor",
+        "sheltertype": "transitionalHousing",
+        "count": 796,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 31,
+    "fields": {
+        "ethnicity": "AI",
+        "sheltertype": "unsheltered",
+        "count": 144,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 32,
+    "fields": {
+        "ethnicity": "AI",
+        "sheltertype": "emergencyShelter",
+        "count": 77,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 33,
+    "fields": {
+        "ethnicity": "AI",
+        "sheltertype": "transitionalHousing",
+        "count": 165,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 34,
+    "fields": {
+        "ethnicity": "asian",
+        "sheltertype": "unsheltered",
+        "count": 19,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 35,
+    "fields": {
+        "ethnicity": "asian",
+        "sheltertype": "emergencyShelter",
+        "count": 20,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 36,
+    "fields": {
+        "ethnicity": "asian",
+        "sheltertype": "transitionalHousing",
+        "count": 27,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 37,
+    "fields": {
+        "ethnicity": "black",
+        "sheltertype": "unsheltered",
+        "count": 267,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 38,
+    "fields": {
+        "ethnicity": "black",
+        "sheltertype": "emergencyShelter",
+        "count": 243,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 39,
+    "fields": {
+        "ethnicity": "black",
+        "sheltertype": "transitionalHousing",
+        "count": 354,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 40,
+    "fields": {
+        "ethnicity": "latino",
+        "sheltertype": "unsheltered",
+        "count": 237,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 41,
+    "fields": {
+        "ethnicity": "latino",
+        "sheltertype": "emergencyShelter",
+        "count": 113,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 42,
+    "fields": {
+        "ethnicity": "latino",
+        "sheltertype": "transitionalHousing",
+        "count": 222,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 43,
+    "fields": {
+        "ethnicity": "hawaiian",
+        "sheltertype": "unsheltered",
+        "count": 44,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 44,
+    "fields": {
+        "ethnicity": "hawaiian",
+        "sheltertype": "emergencyShelter",
+        "count": 41,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 45,
+    "fields": {
+        "ethnicity": "hawaiian",
+        "sheltertype": "transitionalHousing",
+        "count": 28,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 46,
+    "fields": {
+        "ethnicity": "infoNotProvided",
+        "sheltertype": "unsheltered",
+        "count": 41,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 47,
+    "fields": {
+        "ethnicity": "infoNotProvided",
+        "sheltertype": "emergencyShelter",
+        "count": 60,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 48,
+    "fields": {
+        "ethnicity": "infoNotProvided",
+        "sheltertype": "transitionalHousing",
+        "count": 7,
+        "year": 2013,
+        "page": 31
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 49,
+    "fields": {
+        "ethnicity": "white",
+        "sheltertype": "unsheltered",
+        "count": 1150,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 50,
+    "fields": {
+        "ethnicity": "white",
+        "sheltertype": "emergencyShelter",
+        "count": 715,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 51,
+    "fields": {
+        "ethnicity": "white",
+        "sheltertype": "transitionalHousing",
+        "count": 1090,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 52,
+    "fields": {
+        "ethnicity": "popOfColor",
+        "sheltertype": "unsheltered",
+        "count": 517,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 53,
+    "fields": {
+        "ethnicity": "popOfColor",
+        "sheltertype": "emergencyShelter",
+        "count": 427,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 54,
+    "fields": {
+        "ethnicity": "popOfColor",
+        "sheltertype": "transitionalHousing",
+        "count": 1110,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 55,
+    "fields": {
+        "ethnicity": "AI",
+        "sheltertype": "unsheltered",
+        "count": 143,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 56,
+    "fields": {
+        "ethnicity": "AI",
+        "sheltertype": "emergencyShelter",
+        "count": 57,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 57,
+    "fields": {
+        "ethnicity": "AI",
+        "sheltertype": "transitionalHousing",
+        "count": 193,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 58,
+    "fields": {
+        "ethnicity": "asian",
+        "sheltertype": "unsheltered",
+        "count": 12,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 59,
+    "fields": {
+        "ethnicity": "asian",
+        "sheltertype": "emergencyShelter",
+        "count": 13,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 60,
+    "fields": {
+        "ethnicity": "asian",
+        "sheltertype": "transitionalHousing",
+        "count": 27,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 61,
+    "fields": {
+        "ethnicity": "black",
+        "sheltertype": "unsheltered",
+        "count": 155,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 62,
+    "fields": {
+        "ethnicity": "black",
+        "sheltertype": "emergencyShelter",
+        "count": 188,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 63,
+    "fields": {
+        "ethnicity": "black",
+        "sheltertype": "transitionalHousing",
+        "count": 445,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 64,
+    "fields": {
+        "ethnicity": "latino",
+        "sheltertype": "unsheltered",
+        "count": 154,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 65,
+    "fields": {
+        "ethnicity": "latino",
+        "sheltertype": "emergencyShelter",
+        "count": 115,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 66,
+    "fields": {
+        "ethnicity": "latino",
+        "sheltertype": "transitionalHousing",
+        "count": 253,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 67,
+    "fields": {
+        "ethnicity": "hawaiian",
+        "sheltertype": "unsheltered",
+        "count": 24,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 68,
+    "fields": {
+        "ethnicity": "hawaiian",
+        "sheltertype": "emergencyShelter",
+        "count": 17,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 69,
+    "fields": {
+        "ethnicity": "hawaiian",
+        "sheltertype": "transitionalHousing",
+        "count": 37,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 70,
+    "fields": {
+        "ethnicity": "multiRacial",
+        "sheltertype": "unsheltered",
+        "count": 29,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 71,
+    "fields": {
+        "ethnicity": "multiRacial",
+        "sheltertype": "emergencyShelter",
+        "count": 37,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 72,
+    "fields": {
+        "ethnicity": "multiRacial",
+        "sheltertype": "transitionalHousing",
+        "count": 155,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 73,
+    "fields": {
+        "ethnicity": "infoNotProvided",
+        "sheltertype": "unsheltered",
+        "count": 210,
+        "year": 2011,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 74,
+    "fields": {
+        "ethnicity": "white",
+        "sheltertype": "all",
+        "count": 1063,
+        "year": 2009,
+        "page": 12
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 75,
+    "fields": {
+        "ethnicity": "popOfColor",
+        "sheltertype": "all",
+        "count": 528,
+        "year": 2009,
+        "page": 12
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 76,
+    "fields": {
+        "ethnicity": "AI",
+        "sheltertype": "all",
+        "count": 137,
+        "year": 2009,
+        "page": 12
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 77,
+    "fields": {
+        "ethnicity": "asian",
+        "sheltertype": "all",
+        "count": 6,
+        "year": 2009,
+        "page": 12
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 78,
+    "fields": {
+        "ethnicity": "black",
+        "sheltertype": "all",
+        "count": 185,
+        "year": 2009,
+        "page": 12
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 79,
+    "fields": {
+        "ethnicity": "latino",
+        "sheltertype": "all",
+        "count": 145,
+        "year": 2009,
+        "page": 12
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 80,
+    "fields": {
+        "ethnicity": "hawaiian",
+        "sheltertype": "all",
+        "count": 13,
+        "year": 2009,
+        "page": 12
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 81,
+    "fields": {
+        "ethnicity": "multiRacial",
+        "sheltertype": "all",
+        "count": 105,
+        "year": 2009,
+        "page": 12
+    }
+},
+{
+    "model": "homelessApp.ethnicity",
+    "pk": 82,
+    "fields": {
+        "ethnicity": "infoNotProvided",
+        "sheltertype": "all",
+        "count": 83,
+        "year": 2009,
+        "page": 12
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 1,
+    "fields": {
+        "gender": "male",
+        "agerange": "child",
+        "sheltertype": "unsheltered",
+        "count": 48,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 2,
+    "fields": {
+        "gender": "male",
+        "agerange": "child",
+        "sheltertype": "emergencyShelter",
+        "count": 61,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 3,
+    "fields": {
+        "gender": "male",
+        "agerange": "child",
+        "sheltertype": "transitionalHousing",
+        "count": 86,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 4,
+    "fields": {
+        "gender": "male",
+        "agerange": "adult",
+        "sheltertype": "unsheltered",
+        "count": 1201,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 5,
+    "fields": {
+        "gender": "male",
+        "agerange": "adult",
+        "sheltertype": "emergencyShelter",
+        "count": 436,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 6,
+    "fields": {
+        "gender": "male",
+        "agerange": "adult",
+        "sheltertype": "transitionalHousing",
+        "count": 571,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 7,
+    "fields": {
+        "gender": "female",
+        "agerange": "child",
+        "sheltertype": "unsheltered",
+        "count": 28,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 8,
+    "fields": {
+        "gender": "female",
+        "agerange": "child",
+        "sheltertype": "emergencyShelter",
+        "count": 70,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 9,
+    "fields": {
+        "gender": "female",
+        "agerange": "child",
+        "sheltertype": "transitionalHousing",
+        "count": 79,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 10,
+    "fields": {
+        "gender": "female",
+        "agerange": "adult",
+        "sheltertype": "unsheltered",
+        "count": 566,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 11,
+    "fields": {
+        "gender": "female",
+        "agerange": "adult",
+        "sheltertype": "emergencyShelter",
+        "count": 295,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 12,
+    "fields": {
+        "gender": "female",
+        "agerange": "adult",
+        "sheltertype": "transitionalHousing",
+        "count": 300,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 13,
+    "fields": {
+        "gender": "trans",
+        "agerange": "child",
+        "sheltertype": "unsheltered",
+        "count": 0,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 14,
+    "fields": {
+        "gender": "trans",
+        "agerange": "child",
+        "sheltertype": "emergencyShelter",
+        "count": 0,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 15,
+    "fields": {
+        "gender": "trans",
+        "agerange": "child",
+        "sheltertype": "transitionalHousing",
+        "count": 0,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 16,
+    "fields": {
+        "gender": "trans",
+        "agerange": "adult",
+        "sheltertype": "unsheltered",
+        "count": 11,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 17,
+    "fields": {
+        "gender": "trans",
+        "agerange": "adult",
+        "sheltertype": "emergencyShelter",
+        "count": 5,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 18,
+    "fields": {
+        "gender": "trans",
+        "agerange": "adult",
+        "sheltertype": "transitionalHousing",
+        "count": 4,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 19,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "child",
+        "sheltertype": "unsheltered",
+        "count": 4,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 20,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "child",
+        "sheltertype": "emergencyShelter",
+        "count": 0,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 21,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "child",
+        "sheltertype": "transitionalHousing",
+        "count": 0,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 22,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "adult",
+        "sheltertype": "unsheltered",
+        "count": 29,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 23,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "adult",
+        "sheltertype": "emergencyShelter",
+        "count": 5,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 24,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "adult",
+        "sheltertype": "transitionalHousing",
+        "count": 2,
+        "year": 2015,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 25,
+    "fields": {
+        "gender": "unknown",
+        "agerange": "child",
+        "sheltertype": "unsheltered",
+        "count": 73,
+        "year": 2013,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 26,
+    "fields": {
+        "gender": "unknown",
+        "agerange": "child",
+        "sheltertype": "emergencyShelter",
+        "count": 214,
+        "year": 2013,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 27,
+    "fields": {
+        "gender": "unknown",
+        "agerange": "child",
+        "sheltertype": "transitionalHousing",
+        "count": 462,
+        "year": 2013,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 28,
+    "fields": {
+        "gender": "male",
+        "agerange": "all",
+        "sheltertype": "unsheltered",
+        "count": 1334,
+        "year": 2013,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 29,
+    "fields": {
+        "gender": "male",
+        "agerange": "all",
+        "sheltertype": "emergencyShelter",
+        "count": 527,
+        "year": 2013,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 30,
+    "fields": {
+        "gender": "male",
+        "agerange": "all",
+        "sheltertype": "transitionalHousing",
+        "count": 845,
+        "year": 2013,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 31,
+    "fields": {
+        "gender": "female",
+        "agerange": "all",
+        "sheltertype": "unsheltered",
+        "count": 531,
+        "year": 2013,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 32,
+    "fields": {
+        "gender": "female",
+        "agerange": "all",
+        "sheltertype": "emergencyShelter",
+        "count": 427,
+        "year": 2013,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 33,
+    "fields": {
+        "gender": "female",
+        "agerange": "all",
+        "sheltertype": "transitionalHousing",
+        "count": 718,
+        "year": 2013,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 34,
+    "fields": {
+        "gender": "trans",
+        "agerange": "all",
+        "sheltertype": "unsheltered",
+        "count": 11,
+        "year": 2013,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 35,
+    "fields": {
+        "gender": "trans",
+        "agerange": "all",
+        "sheltertype": "emergencyShelter",
+        "count": 8,
+        "year": 2013,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 36,
+    "fields": {
+        "gender": "trans",
+        "agerange": "all",
+        "sheltertype": "transitionalHousing",
+        "count": 6,
+        "year": 2013,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 37,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "all",
+        "sheltertype": "unsheltered",
+        "count": 19,
+        "year": 2013,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 38,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "all",
+        "sheltertype": "emergencyShelter",
+        "count": 12,
+        "year": 2013,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 39,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "all",
+        "sheltertype": "transitionalHousing",
+        "count": 3,
+        "year": 2013,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 40,
+    "fields": {
+        "gender": "unknown",
+        "agerange": "child",
+        "sheltertype": "unsheltered",
+        "count": 64,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 41,
+    "fields": {
+        "gender": "unknown",
+        "agerange": "child",
+        "sheltertype": "emergencyShelter",
+        "count": 152,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 42,
+    "fields": {
+        "gender": "unknown",
+        "agerange": "child",
+        "sheltertype": "transitionalHousing",
+        "count": 559,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 43,
+    "fields": {
+        "gender": "male",
+        "agerange": "all",
+        "sheltertype": "unsheltered",
+        "count": 1261,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 44,
+    "fields": {
+        "gender": "male",
+        "agerange": "all",
+        "sheltertype": "emergencyShelter",
+        "count": 637,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 45,
+    "fields": {
+        "gender": "male",
+        "agerange": "all",
+        "sheltertype": "transitionalHousing",
+        "count": 992,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 46,
+    "fields": {
+        "gender": "female",
+        "agerange": "all",
+        "sheltertype": "unsheltered",
+        "count": 422,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 47,
+    "fields": {
+        "gender": "female",
+        "agerange": "all",
+        "sheltertype": "emergencyShelter",
+        "count": 365,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 48,
+    "fields": {
+        "gender": "female",
+        "agerange": "all",
+        "sheltertype": "transitionalHousing",
+        "count": 926,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 49,
+    "fields": {
+        "gender": "trans",
+        "agerange": "all",
+        "sheltertype": "unsheltered",
+        "count": 5,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 50,
+    "fields": {
+        "gender": "trans",
+        "agerange": "all",
+        "sheltertype": "emergencyShelter",
+        "count": 0,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 51,
+    "fields": {
+        "gender": "trans",
+        "agerange": "all",
+        "sheltertype": "transitionalHousing",
+        "count": 0,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 52,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "all",
+        "sheltertype": "unsheltered",
+        "count": 30,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 53,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "all",
+        "sheltertype": "emergencyShelter",
+        "count": 7,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 54,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "all",
+        "sheltertype": "transitionalHousing",
+        "count": 10,
+        "year": 2011,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 55,
+    "fields": {
+        "gender": "male",
+        "agerange": "all",
+        "sheltertype": "unsheltered",
+        "count": 1146,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 56,
+    "fields": {
+        "gender": "male",
+        "agerange": "all",
+        "sheltertype": "emergencyShelter",
+        "count": 0,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 57,
+    "fields": {
+        "gender": "male",
+        "agerange": "all",
+        "sheltertype": "transitionalHousing",
+        "count": 0,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 58,
+    "fields": {
+        "gender": "female",
+        "agerange": "all",
+        "sheltertype": "unsheltered",
+        "count": 414,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 59,
+    "fields": {
+        "gender": "female",
+        "agerange": "all",
+        "sheltertype": "emergencyShelter",
+        "count": 0,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 60,
+    "fields": {
+        "gender": "female",
+        "agerange": "all",
+        "sheltertype": "transitionalHousing",
+        "count": 0,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 61,
+    "fields": {
+        "gender": "trans",
+        "agerange": "all",
+        "sheltertype": "unsheltered",
+        "count": 3,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 62,
+    "fields": {
+        "gender": "trans",
+        "agerange": "all",
+        "sheltertype": "emergencyShelter",
+        "count": 0,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 63,
+    "fields": {
+        "gender": "trans",
+        "agerange": "all",
+        "sheltertype": "transitionalHousing",
+        "count": 0,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 64,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "all",
+        "sheltertype": "unsheltered",
+        "count": 29,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 65,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "all",
+        "sheltertype": "emergencyShelter",
+        "count": 0,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.gender",
+    "pk": 66,
+    "fields": {
+        "gender": "unknownOtherZ",
+        "agerange": "all",
+        "sheltertype": "transitionalHousing",
+        "count": 0,
+        "year": 2009,
+        "page": 11
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 1,
+    "fields": {
+        "geographiclocation": "downtown",
+        "count": 448,
+        "year": 2015,
+        "page": 33
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 2,
+    "fields": {
+        "geographiclocation": "SEPotland",
+        "count": 309,
+        "year": 2015,
+        "page": 33
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 3,
+    "fields": {
+        "geographiclocation": "innerNEPortland",
+        "count": 155,
+        "year": 2015,
+        "page": 33
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 4,
+    "fields": {
+        "geographiclocation": "gresham",
+        "count": 138,
+        "year": 2015,
+        "page": 33
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 5,
+    "fields": {
+        "geographiclocation": "NWPortland",
+        "count": 125,
+        "year": 2015,
+        "page": 33
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 6,
+    "fields": {
+        "geographiclocation": "outerEPortland",
+        "count": 126,
+        "year": 2015,
+        "page": 33
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 7,
+    "fields": {
+        "geographiclocation": "SWPortland",
+        "count": 133,
+        "year": 2015,
+        "page": 33
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 8,
+    "fields": {
+        "geographiclocation": "NPortland",
+        "count": 92,
+        "year": 2015,
+        "page": 33
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 9,
+    "fields": {
+        "geographiclocation": "centralNEPortland",
+        "count": 50,
+        "year": 2015,
+        "page": 33
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 10,
+    "fields": {
+        "geographiclocation": "eastCounty",
+        "count": 176,
+        "year": 2015,
+        "page": 33
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 11,
+    "fields": {
+        "geographiclocation": "unknown",
+        "count": 273,
+        "year": 2015,
+        "page": 33
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 12,
+    "fields": {
+        "geographiclocation": "downtown",
+        "count": 474,
+        "year": 2013,
+        "page": 19
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 13,
+    "fields": {
+        "geographiclocation": "SEPotland",
+        "count": 305,
+        "year": 2013,
+        "page": 19
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 14,
+    "fields": {
+        "geographiclocation": "innerNEPortland",
+        "count": 205,
+        "year": 2013,
+        "page": 19
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 15,
+    "fields": {
+        "geographiclocation": "NWPortland",
+        "count": 170,
+        "year": 2013,
+        "page": 19
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 16,
+    "fields": {
+        "geographiclocation": "outerEPortland",
+        "count": 153,
+        "year": 2013,
+        "page": 19
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 17,
+    "fields": {
+        "geographiclocation": "SWPortland",
+        "count": 139,
+        "year": 2013,
+        "page": 19
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 18,
+    "fields": {
+        "geographiclocation": "NPortland",
+        "count": 134,
+        "year": 2013,
+        "page": 19
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 19,
+    "fields": {
+        "geographiclocation": "centralNEPortland",
+        "count": 62,
+        "year": 2013,
+        "page": 19
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 20,
+    "fields": {
+        "geographiclocation": "eastCounty",
+        "count": 65,
+        "year": 2013,
+        "page": 19
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 21,
+    "fields": {
+        "geographiclocation": "unknown",
+        "count": 188,
+        "year": 2013,
+        "page": 19
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 22,
+    "fields": {
+        "geographiclocation": "downtown",
+        "count": 347,
+        "year": 2011,
+        "page": 16
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 23,
+    "fields": {
+        "geographiclocation": "SEPotland",
+        "count": 394,
+        "year": 2011,
+        "page": 16
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 24,
+    "fields": {
+        "geographiclocation": "innerNEPortland",
+        "count": 149,
+        "year": 2011,
+        "page": 16
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 25,
+    "fields": {
+        "geographiclocation": "NWPortland",
+        "count": 189,
+        "year": 2011,
+        "page": 16
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 26,
+    "fields": {
+        "geographiclocation": "outerEPortland",
+        "count": 103,
+        "year": 2011,
+        "page": 16
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 27,
+    "fields": {
+        "geographiclocation": "SWPortland",
+        "count": 152,
+        "year": 2011,
+        "page": 16
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 28,
+    "fields": {
+        "geographiclocation": "NPortland",
+        "count": 89,
+        "year": 2011,
+        "page": 16
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 29,
+    "fields": {
+        "geographiclocation": "centralNEPortland",
+        "count": 45,
+        "year": 2011,
+        "page": 16
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 30,
+    "fields": {
+        "geographiclocation": "eastCounty",
+        "count": 92,
+        "year": 2011,
+        "page": 16
+    }
+},
+{
+    "model": "homelessApp.geographiclocation",
+    "pk": 31,
+    "fields": {
+        "geographiclocation": "unknown",
+        "count": 158,
+        "year": 2011,
+        "page": 16
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 1,
+    "fields": {
+        "sheltertype": "unsheltered",
+        "age": "child",
+        "count": 78,
+        "year": 2015,
+        "page": 20
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 2,
+    "fields": {
+        "sheltertype": "emergencyShelter",
+        "age": "child",
+        "count": 131,
+        "year": 2015,
+        "page": 20
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 3,
+    "fields": {
+        "sheltertype": "transitionalHousing",
+        "age": "child",
+        "count": 165,
+        "year": 2015,
+        "page": 20
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 4,
+    "fields": {
+        "sheltertype": "unsheltered",
+        "age": "adult",
+        "count": 1809,
+        "year": 2015,
+        "page": 20
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 5,
+    "fields": {
+        "sheltertype": "emergencyShelter",
+        "age": "adult",
+        "count": 741,
+        "year": 2015,
+        "page": 20
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 6,
+    "fields": {
+        "sheltertype": "transitionalHousing",
+        "age": "adult",
+        "count": 877,
+        "year": 2015,
+        "page": 20
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 7,
+    "fields": {
+        "sheltertype": "unsheltered",
+        "age": "child",
+        "count": 73,
+        "year": 2013,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 8,
+    "fields": {
+        "sheltertype": "emergencyShelter",
+        "age": "child",
+        "count": 214,
+        "year": 2013,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 9,
+    "fields": {
+        "sheltertype": "transitionalHousing",
+        "age": "child",
+        "count": 462,
+        "year": 2013,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 10,
+    "fields": {
+        "sheltertype": "unsheltered",
+        "age": "adult",
+        "count": 1822,
+        "year": 2013,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 11,
+    "fields": {
+        "sheltertype": "emergencyShelter",
+        "age": "adult",
+        "count": 760,
+        "year": 2013,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 12,
+    "fields": {
+        "sheltertype": "transitionalHousing",
+        "age": "adult",
+        "count": 1110,
+        "year": 2013,
+        "page": 24
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 13,
+    "fields": {
+        "sheltertype": "unsheltered",
+        "age": "child",
+        "count": 64,
+        "year": 2011,
+        "page": 23
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 14,
+    "fields": {
+        "sheltertype": "emergencyShelter",
+        "age": "child",
+        "count": 152,
+        "year": 2011,
+        "page": 23
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 15,
+    "fields": {
+        "sheltertype": "transitionalHousing",
+        "age": "child",
+        "count": 559,
+        "year": 2011,
+        "page": 23
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 16,
+    "fields": {
+        "sheltertype": "unsheltered",
+        "age": "adult",
+        "count": 1654,
+        "year": 2011,
+        "page": 23
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 17,
+    "fields": {
+        "sheltertype": "emergencyShelter",
+        "age": "adult",
+        "count": 857,
+        "year": 2011,
+        "page": 23
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 18,
+    "fields": {
+        "sheltertype": "transitionalHousing",
+        "age": "adult",
+        "count": 1369,
+        "year": 2011,
+        "page": 23
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 19,
+    "fields": {
+        "sheltertype": "unsheltered",
+        "age": "child",
+        "count": 44,
+        "year": 2009,
+        "page": 10
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 20,
+    "fields": {
+        "sheltertype": "emergencyShelter",
+        "age": "child",
+        "count": 0,
+        "year": 2009,
+        "page": 10
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 21,
+    "fields": {
+        "sheltertype": "transitionalHousing",
+        "age": "child",
+        "count": 0,
+        "year": 2009,
+        "page": 10
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 22,
+    "fields": {
+        "sheltertype": "unsheltered",
+        "age": "adult",
+        "count": 1547,
+        "year": 2009,
+        "page": 10
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 23,
+    "fields": {
+        "sheltertype": "emergencyShelter",
+        "age": "adult",
+        "count": 0,
+        "year": 2009,
+        "page": 10
+    }
+},
+{
+    "model": "homelessApp.homelessindividuals",
+    "pk": 24,
+    "fields": {
+        "sheltertype": "transitionalHousing",
+        "age": "adult",
+        "count": 0,
+        "year": 2009,
+        "page": 10
+    }
+},
+{
+    "model": "homelessApp.veterans",
+    "pk": 1,
+    "fields": {
+        "veteran": "veteran",
+        "sheltertype": "unsheltered",
+        "count": 199,
+        "year": 15,
+        "page": 29
+    }
+},
+{
+    "model": "homelessApp.veterans",
+    "pk": 2,
+    "fields": {
+        "veteran": "veteran",
+        "sheltertype": "emergencyShelter",
+        "count": 58,
+        "year": 15,
+        "page": 29
+    }
+},
+{
+    "model": "homelessApp.veterans",
+    "pk": 3,
+    "fields": {
+        "veteran": "veteran",
+        "sheltertype": "transitionalHousing",
+        "count": 165,
+        "year": 15,
+        "page": 29
+    }
+},
+{
+    "model": "homelessApp.veterans",
+    "pk": 4,
+    "fields": {
+        "veteran": "veteran",
+        "sheltertype": "unsheltered",
+        "count": 215,
+        "year": 13,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.veterans",
+    "pk": 5,
+    "fields": {
+        "veteran": "veteran",
+        "sheltertype": "emergencyShelter",
+        "count": 50,
+        "year": 13,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.veterans",
+    "pk": 6,
+    "fields": {
+        "veteran": "veteran",
+        "sheltertype": "transitionalHousing",
+        "count": 148,
+        "year": 13,
+        "page": 27
+    }
+},
+{
+    "model": "homelessApp.veterans",
+    "pk": 7,
+    "fields": {
+        "veteran": "veteran",
+        "sheltertype": "unsheltered",
+        "count": 221,
+        "year": 11,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.veterans",
+    "pk": 8,
+    "fields": {
+        "veteran": "veteran",
+        "sheltertype": "emergencyShelter",
+        "count": 135,
+        "year": 11,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.veterans",
+    "pk": 9,
+    "fields": {
+        "veteran": "veteran",
+        "sheltertype": "transitionalHousing",
+        "count": 108,
+        "year": 11,
+        "page": 25
+    }
+},
+{
+    "model": "homelessApp.veterans",
+    "pk": 10,
+    "fields": {
+        "veteran": "veteran",
+        "sheltertype": "unsheltered",
+        "count": 192,
+        "year": 9,
+        "page": 12
+    }
+}
+]
