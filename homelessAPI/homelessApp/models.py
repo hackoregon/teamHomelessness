@@ -1,15 +1,13 @@
 from django.db import models
+from django.contrib.postgres.fields import IntegerRangeField
 
 class Agehousecomposition(models.Model):
-    age = models.CharField(max_length=255)
+    age = IntegerRangeField(null=True)
     householdtype = models.CharField(max_length=255)
     sheltertype = models.CharField(max_length=255)
-    propyes = models.FloatField(blank=True, null=True)
-    propno = models.FloatField(blank=True, null=True)
-    countyes = models.IntegerField(blank=True, null=True)
-    countno = models.IntegerField(blank=True, null=True)
-    yearinpit = models.IntegerField(blank=True, null=True)
-    pageinpit = models.IntegerField(blank=True, null=True)
+    count = models.IntegerField(blank=True, null=True)
+    year = models.IntegerField(blank=True, null=True)
+    page = models.IntegerField(blank=True, null=True)
 
     class Meta:
         db_table = 'agehousecomposition'
