@@ -1,0 +1,10 @@
+version: '2'
+services:
+  api:
+    build: .
+    image: "${DOCKER_REPO}/${DOCKER_WEB_IMAGE}"
+    command: /code/docker-entrypoint.sh
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"

@@ -1,4 +1,5 @@
 project_config.py
+secrets.sh
 *.pyc
 venv3
 .DS_Store
