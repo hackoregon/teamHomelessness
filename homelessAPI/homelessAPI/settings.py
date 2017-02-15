@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 import os
 from . import project_config
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -85,7 +86,7 @@ DATABASES = {
         'HOST': project_config.AWS['HOST'],
         'PORT': 5432,
         'USER': project_config.AWS['USER'],
-        'PASSWORD': project_config.AWS['PASSWORD'], 
+        'PASSWORD': project_config.AWS['PASSWORD'],
     }
 }
 
@@ -126,19 +127,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR + STATIC_URL
+#STATIC_ROOT = BASE_DIR + '/homelessApp/static/'
 
 # testing setup
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
-# auto includes these command line args that are run with nose 
+# auto includes these command line args that are run with nose
 NOSE_ARGS = [
     '--with-coverage',
     '--cover-package=homelessApp',
     '--cover-html'
 ]
-
-
-
-
-
