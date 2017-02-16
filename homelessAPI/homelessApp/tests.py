@@ -81,11 +81,44 @@ class RootAPITest(TestCase):
         self.assertEqual(response.status_code, 200)
 
 
- 
+class ListSleepingLocationTest(TestCase):
+    
+    def setUp(self):
+        self.c = Client()
+
+    def test_get_request_sends_200(self):
+        response = self.c.get("/homeless/sleeping/")
+        self.assertEqual(response.status_code, 200)
 
 
+class ListLengthOfHomelessnessTest(TestCase):
+    
+    def setUp(self):
+        self.c = Client()
+
+    def test_get_request_sends_200(self):
+        response = self.c.get("/homeless/length/")
+        self.assertEqual(response.status_code, 200) 
 
 
+class ListDomesticViolenceTest(TestCase):
+    
+    def setUp(self):
+        self.c = Client()
+
+    def test_get_request_sends_200(self):
+        response = self.c.get("/homeless/domesticviolence/")
+        self.assertEqual(response.status_code, 200)
+
+
+class ListChronicHomelessnessTest(TestCase):
+    
+    def setUp(self):
+        self.c = Client()
+
+    def test_get_request_sends_200(self):
+        response = self.c.get("/homeless/chronic/")
+        self.assertEqual(response.status_code, 200)
 
 
 
