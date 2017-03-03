@@ -11,7 +11,7 @@ class BaseModel(models.Model):
         abstract = True
 
 
-class Agehousecomposition(BaseModel):
+class AgeHouseComposition(BaseModel):
     age = IntegerRangeField(null=True)
     householdtype = models.CharField(max_length=255)
     sheltertype = models.CharField(max_length=255)
@@ -45,14 +45,14 @@ class Gender(BaseModel):
         db_table = 'gender'
 
 
-class Geographiclocation(BaseModel):
+class GeographicLocation(BaseModel):
     geographiclocation = models.CharField(max_length=255)
 
     class Meta:
         db_table = 'geographiclocation'
 
 
-class Homelessindividuals(BaseModel):
+class HomelessIndividuals(BaseModel):
     sheltertype = models.CharField(max_length=255)
     age = models.CharField(max_length=255, blank=True, null=True)
 

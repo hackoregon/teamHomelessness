@@ -54,6 +54,10 @@ class BasicEndpointsTest(TestCase):
         response = self.c.get("/homeless/chronic/")
         self.assertEqual(response.status_code, 200)
 
+    def test_agehousecomp_get_request_sends_200(self):
+        response = self.c.get("/homeless/agehousecomp/")
+        self.assertEqual(response.status_code, 200)
+
     def test_root_get_request_sends_200(self):
         response = self.c.get("/homeless/")
         self.assertEqual(response.status_code, 200)
