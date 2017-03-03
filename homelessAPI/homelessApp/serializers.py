@@ -66,6 +66,3 @@ class SleepingLocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.SleepingLocation
         fields = '__all__'
-
-
-

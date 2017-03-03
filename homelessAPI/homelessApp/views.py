@@ -44,17 +44,21 @@ class ListAgeHouseComp(generics.ListAPIView):
     serializer_class = serializers.AgeHouseCompositionSerializer
 
 
-# class ListChronicHomelessness(generics.ListAPIView):
-#     queryset = models.
+class ListChronicHomelessness(generics.ListAPIView):
+    queryset = models.ChronicHomelessness.objects.all()
+    serializer_class = serializers.ChronicHomelessnessSerializer
 
 
+class ListDomesticViolence(generics.ListAPIView):
+    queryset = models.DomesticViolence.objects.all()
+    serializer_class = serializers.DomesticViolenceSerializer
 
 
+class ListLengthOfHomelessness(generics.ListAPIView):
+    queryset = models.LengthOfHomelessness.objects.all()
+    serializer_class = serializers.LengthOfHomelessnessSerializer
 
 
-
-
-
-
-
-
+class ListSleepingLocation(generics.ListAPIView):
+    queryset = models.SleepingLocation.objects.all()
+    serializer_class = serializers.SleepingLocationSerializer
