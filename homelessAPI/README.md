@@ -60,4 +60,4 @@ DJANGO_SECRET = 'secret key here'
 ### 3. Start server
 - In directory with manage.py run this command:
   - ```./bin/start-proj.sh```
-  - see working root endpoint at: [http://localhost:8000/homeless/](http://localhost:8000/example/)
+  - see working root endpoint at: [http://localhost:8000/homeless/](http://localhost:8000/homeless/)
