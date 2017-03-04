@@ -2,126 +2,62 @@ from django.test import TestCase, Client
 import json
 
 
-class ListDisabilityTest(TestCase): 
+class BasicEndpointsTest(TestCase): 
     fixtures = ["APP_FIXTURE"]
 
     def setUp(self):
         self.c = Client()
 
-    def test_get_request_sends_200(self):
+    def test_disability_get_request_sends_200(self):
         response = self.c.get("/homeless/disability/")
         self.assertEqual(response.status_code, 200)
 
-    def test_response_returns_correct_objects(self):
+    def test_disability_response_returns_correct_objects(self):
         response = self.c.get("/homeless/disability/?format=json")
         json_content = json.loads(response.content.decode('utf-8'))
-
         # 45 records in disability fixture
         self.assertEqual(len(json_content), 45)
 
-
-class ListEthnicityTest(TestCase):
-    fixtures = ["APP_FIXTURE"]
-
-    def setUp(self):
-        self.c = Client()
-
-    def test_get_request_sends_200(self):
+    def test_ethnicity_get_request_sends_200(self):
         response = self.c.get("/homeless/ethnicity/")
         self.assertEqual(response.status_code, 200)
 
-
-class ListIndividualsTest(TestCase):
-
-    def setUp(self):
-        self.c = Client()
-
-    def test_get_request_sends_200(self):
+    def test_individuals_get_request_sends_200(self):
         response = self.c.get("/homeless/individuals/")
         self.assertEqual(response.status_code, 200)
 
-
-class ListGenderTest(TestCase):
-
-    def setUp(self):
-        self.c = Client()
-
-    def test_get_request_sends_200(self):
+    def test_gender_get_request_sends_200(self):
         response = self.c.get("/homeless/gender/")
         self.assertEqual(response.status_code, 200)
 
-
-class ListGeolocationTest(TestCase):
-
-    def setUp(self):
-        self.c = Client()
-
-    def test_get_request_sends_200(self):
+    def test_geolocation_get_request_sends_200(self):
         response = self.c.get("/homeless/geolocation/")
         self.assertEqual(response.status_code, 200)
 
-
-class ListVeteransTest(TestCase):
-    
-    def setUp(self):
-        self.c = Client()
-
-    def test_get_request_sends_200(self):
+    def test_veterans_get_request_sends_200(self):
         response = self.c.get("/homeless/veterans/")
         self.assertEqual(response.status_code, 200)
 
-
-class RootAPITest(TestCase):
-
-    def setUp(self):
-        self.c = Client()
-
-    def test_get_request_sends_200(self):
-        response = self.c.get("/homeless/")
-        self.assertEqual(response.status_code, 200)
-
-
-class ListSleepingLocationTest(TestCase):
-    
-    def setUp(self):
-        self.c = Client()
-
-    def test_get_request_sends_200(self):
+    def test_sleeping_get_request_sends_200(self):
         response = self.c.get("/homeless/sleeping/")
         self.assertEqual(response.status_code, 200)
 
-
-class ListLengthOfHomelessnessTest(TestCase):
-    
-    def setUp(self):
-        self.c = Client()
-
-    def test_get_request_sends_200(self):
+    def test_length_get_request_sends_200(self):
         response = self.c.get("/homeless/length/")
-        self.assertEqual(response.status_code, 200) 
+        self.assertEqual(response.status_code, 200)
 
-
-class ListDomesticViolenceTest(TestCase):
-    
-    def setUp(self):
-        self.c = Client()
-
-    def test_get_request_sends_200(self):
+    def test_domesticviolence_get_request_sends_200(self):
         response = self.c.get("/homeless/domesticviolence/")
         self.assertEqual(response.status_code, 200)
 
-
-class ListChronicHomelessnessTest(TestCase):
-    
-    def setUp(self):
-        self.c = Client()
-
-    def test_get_request_sends_200(self):
+    def test_chronic_get_request_sends_200(self):
         response = self.c.get("/homeless/chronic/")
         self.assertEqual(response.status_code, 200)
 
+    def test_agehousecomp_get_request_sends_200(self):
+        response = self.c.get("/homeless/agehousecomp/")
+        self.assertEqual(response.status_code, 200)
 
-
-
-
-
+    def test_root_get_request_sends_200(self):
+        response = self.c.get("/homeless/")
+        self.assertEqual(response.status_code, 200)

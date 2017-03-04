@@ -5,67 +5,61 @@ from rest_framework.reverse import reverse
 
 from . import serializers
 from . import models 
-
-
-# don't need this root view if team decides to use swagger
-@api_view(['GET'])
-def Team_homelessness_api_root(request, format=None):
-    "The following endpoints are available"
-    return Response({
-        'Disability table list': 
-        reverse('homeless:disability-list', request=request, format=format),
-
-        'Ethnicity table list': 
-        reverse('homeless:ethnicity-list', request=request, format=format),
-
-        'Gender table list': 
-        reverse('homeless:gender-list', request=request, format=format),
-
-        'Geographiclocation table list': 
-        reverse('homeless:geo-list', request=request, format=format),
-
-        'Homelessindividuals table list': 
-        reverse('homeless:individuals-list', request=request, format=format),
-
-        'Veterans table list': 
-        reverse('homeless:veterans-list', request=request, format=format),        
-    })
-
+from . import filters
 
 class ListDisability(generics.ListAPIView):
     """Add documentation for endpoint use here"""
     queryset = models.Disability.objects.all()
     serializer_class = serializers.DisabilitySerializer
+    # filter_class = filters.YearFilter
+
 
 class ListEthnicity(generics.ListAPIView):
     """Add documentation for endpoint use here"""
     queryset = models.Ethnicity.objects.all()
     serializer_class = serializers.EthnicitySerializer
 
+
 class ListGender(generics.ListAPIView):
     queryset = models.Gender.objects.all()
     serializer_class = serializers.GenderSerializer
 
+
 class ListGeographiclocation(generics.ListAPIView):
-    queryset = models.Geographiclocation.objects.all()
-    serializer_class = serializers.GeographiclocationSerializer
+    queryset = models.GeographicLocation.objects.all()
+    serializer_class = serializers.GeographicLocationSerializer
+
 
 class ListHomelessindividuals(generics.ListAPIView):
-    queryset = models.Homelessindividuals.objects.all()
-    serializer_class = serializers.HomelessindividualsSerializer
+    queryset = models.HomelessIndividuals.objects.all()
+    serializer_class = serializers.HomelessIndividualsSerializer
+
 
 class ListVeterans(generics.ListAPIView):
     queryset = models.Veterans.objects.all()
     serializer_class = serializers.VeteransSerializer 
 
 
+class ListAgeHouseComp(generics.ListAPIView):
+    queryset = models.AgeHouseComposition.objects.all()
+    serializer_class = serializers.AgeHouseCompositionSerializer
 
 
+class ListChronicHomelessness(generics.ListAPIView):
+    queryset = models.ChronicHomelessness.objects.all()
+    serializer_class = serializers.ChronicHomelessnessSerializer
 
 
+class ListDomesticViolence(generics.ListAPIView):
+    queryset = models.DomesticViolence.objects.all()
+    serializer_class = serializers.DomesticViolenceSerializer
 
 
+class ListLengthOfHomelessness(generics.ListAPIView):
+    queryset = models.LengthOfHomelessness.objects.all()
+    serializer_class = serializers.LengthOfHomelessnessSerializer
 
 
-
-
+class ListSleepingLocation(generics.ListAPIView):
+    queryset = models.SleepingLocation.objects.all()
+    serializer_class = serializers.SleepingLocationSerializer
