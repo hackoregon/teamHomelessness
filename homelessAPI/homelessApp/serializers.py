@@ -7,27 +7,62 @@ class DisabilitySerializer(serializers.ModelSerializer):
         model = models.Disability
         fields = '__all__'
 
+
 class EthnicitySerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Ethnicity
         fields = '__all__'
+
 
 class GenderSerializer(serializers.ModelSerializer):
     class Meta: 
         model = models.Gender
         fields = '__all__'
 
-class GeographiclocationSerializer(serializers.ModelSerializer):
+
+class GeographicLocationSerializer(serializers.ModelSerializer):
     class Meta: 
-        model = models.Geographiclocation
+        model = models.GeographicLocation
         fields = '__all__'
 
-class HomelessindividualsSerializer(serializers.ModelSerializer):
+
+class HomelessIndividualsSerializer(serializers.ModelSerializer):
     class Meta: 
-        model = models.Homelessindividuals
+        model = models.HomelessIndividuals
         fields = '__all__'
+
 
 class VeteransSerializer(serializers.ModelSerializer):
     class Meta: 
         model = models.Veterans
+        fields = '__all__'
+
+
+class AgeHouseCompositionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.AgeHouseComposition
+        fields = '__all__'
+
+
+class ChronicHomelessnessSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.ChronicHomelessness
+        fields = '__all__'
+
+
+class DomesticViolenceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.DomesticViolence
+        fields = '__all__'
+
+
+class LengthOfHomelessnessSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.LengthOfHomelessness
+        fields = '__all__'
+
+
+class SleepingLocationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.SleepingLocation
         fields = '__all__'

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     'django_nose',
     'homelessApp',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +141,7 @@ NOSE_ARGS = [
     '--cover-package=homelessApp',
     '--cover-html'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ('rest_framework.filters.DjangoFilterBackend',)
+}
