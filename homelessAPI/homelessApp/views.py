@@ -5,12 +5,13 @@ from rest_framework.reverse import reverse
 
 from . import serializers
 from . import models 
-
+from . import filters
 
 class ListDisability(generics.ListAPIView):
     """Add documentation for endpoint use here"""
     queryset = models.Disability.objects.all()
     serializer_class = serializers.DisabilitySerializer
+    # filter_class = filters.YearFilter
 
 
 class ListEthnicity(generics.ListAPIView):
