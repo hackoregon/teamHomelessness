@@ -5,7 +5,6 @@ from rest_framework.reverse import reverse
 
 from . import serializers
 from . import models 
-from . import filters
 
 class BaseListView(generics.ListAPIView):
     """
@@ -13,7 +12,7 @@ class BaseListView(generics.ListAPIView):
     generics.ListAPIView views using querystring params. 
 
     Ex. 
-    http://example.com/homeless/disability/?year=2015
+    http://example.com/homeless/<endpoint_name>/?year=2015
     """
 
     def get_queryset(self):
