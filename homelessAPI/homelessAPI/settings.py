@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     'django_nose',
     'homelessApp',
-    'django_filters',
+    #'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -132,16 +132,16 @@ STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR + STATIC_URL
 #STATIC_ROOT = BASE_DIR + '/homelessApp/static/'
 
-# testing setup
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+# # testing setup
+# TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
-# auto includes these command line args that are run with nose
-NOSE_ARGS = [
-    '--with-coverage',
-    '--cover-package=homelessApp',
-    '--cover-html'
-]
+# # auto includes these command line args that are run with nose
+# NOSE_ARGS = [
+#     '--with-coverage',
+#     '--cover-package=homelessApp',
+#     '--cover-html'
+# ]
 
-REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKENDS': ('rest_framework.filters.DjangoFilterBackend',)
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_FILTER_BACKENDS': ('rest_framework.filters.DjangoFilterBackend',)
+# }

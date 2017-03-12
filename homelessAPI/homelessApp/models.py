@@ -96,7 +96,56 @@ class LengthOfHomelessness(BaseModel):
     class Meta:
         db_table = 'lengthofhomelessness'
 
+# ------------------------------------------------------------------
+# ACS models 
 
+class Acsage(models.Model):
+    acsid = models.CharField(max_length=1000, blank=True, null=True)
+    geoid = models.CharField(max_length=255, blank=True, null=True)
+    sex = models.CharField(max_length=25, blank=True, null=True)
+    age = IntegerRangeField(null=True)  
+    count = models.IntegerField()
+    year = models.IntegerField()
+    sourcefile = models.CharField(max_length=255, blank=True, null=True)
+
+    class Meta:
+        db_table = 'acsage'
+
+
+class Acsdisability(models.Model):
+    acsid = models.CharField(max_length=1000, blank=True, null=True)
+    geoid = models.CharField(max_length=255, blank=True, null=True)
+    disability_status = models.CharField(max_length=50, blank=True, null=True)
+    count = models.IntegerField()
+    year = models.IntegerField()
+    sourcefile = models.CharField(max_length=255, blank=True, null=True)
+
+    class Meta:
+        db_table = 'acsdisability'
+
+
+class Acsrace(models.Model):
+    acsid = models.CharField(max_length=1000, blank=True, null=True)
+    geoid = models.CharField(max_length=255, blank=True, null=True)
+    race = models.CharField(max_length=50, blank=True, null=True)
+    count = models.IntegerField()
+    year = models.IntegerField()
+    sourcefile = models.CharField(max_length=255, blank=True, null=True)
+
+    class Meta:
+        db_table = 'acsrace'
+
+
+class Acsveteran(models.Model):
+    acsid = models.CharField(max_length=1000, blank=True, null=True)
+    geoid = models.CharField(max_length=255, blank=True, null=True)
+    veteran_status = models.CharField(max_length=50, blank=True, null=True)
+    count = models.IntegerField()
+    year = models.IntegerField()
+    sourcefile = models.CharField(max_length=255, blank=True, null=True)
+
+    class Meta:
+        db_table = 'acsveteran'
 
 
 
