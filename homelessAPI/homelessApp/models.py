@@ -18,6 +18,7 @@ class AgeHouseComposition(BaseModel):
 
     class Meta:
         db_table = 'agehousecomposition'
+        verbose_name_plural = 'Age House Composition'
 
 
 class Disability(BaseModel):
@@ -26,6 +27,7 @@ class Disability(BaseModel):
 
     class Meta:
         db_table = 'disability'
+        verbose_name_plural = 'Disability'
 
 
 class Ethnicity(BaseModel):
@@ -34,6 +36,7 @@ class Ethnicity(BaseModel):
 
     class Meta:
         db_table = 'ethnicity'
+        verbose_name_plural = 'Ethnicity'
 
 
 class Gender(BaseModel):
@@ -43,6 +46,7 @@ class Gender(BaseModel):
 
     class Meta:
         db_table = 'gender'
+        verbose_name_plural = 'Gender'
 
 
 class GeographicLocation(BaseModel):
@@ -50,6 +54,7 @@ class GeographicLocation(BaseModel):
 
     class Meta:
         db_table = 'geographiclocation'
+        verbose_name_plural = 'Geographic Location'
 
 
 class HomelessIndividuals(BaseModel):
@@ -58,6 +63,7 @@ class HomelessIndividuals(BaseModel):
 
     class Meta:
         db_table = 'homelessindividuals'
+        verbose_name_plural = 'Homeless Individuals'
 
 
 class Veterans(BaseModel):
@@ -66,6 +72,7 @@ class Veterans(BaseModel):
 
     class Meta:
         db_table = 'veterans'
+        verbose_name_plural = 'Veterans'
 
 
 class ChronicHomelessness(BaseModel):
@@ -74,6 +81,7 @@ class ChronicHomelessness(BaseModel):
 
     class Meta:
         db_table = 'chronichomelessness'
+        verbose_name_plural = 'Chronic Homelessness'
 
 
 class DomesticViolence(BaseModel):
@@ -81,6 +89,7 @@ class DomesticViolence(BaseModel):
 
     class Meta:
         db_table = 'domesticviolence'
+        verbose_name_plural = 'Domestic Violence'
 
 
 class SleepingLocation(BaseModel):
@@ -88,6 +97,7 @@ class SleepingLocation(BaseModel):
 
     class Meta:
         db_table = 'sleepinglocation'
+        verbose_name_plural = 'Sleeping Location'
 
 
 class LengthOfHomelessness(BaseModel):
@@ -95,6 +105,7 @@ class LengthOfHomelessness(BaseModel):
 
     class Meta:
         db_table = 'lengthofhomelessness'
+        verbose_name_plural = 'Length of Homelessness'
 
 # ------------------------------------------------------------------
 # ACS models
