@@ -4,14 +4,14 @@ from rest_framework.response import Response
 from rest_framework.reverse import reverse
 
 from . import serializers
-from . import models 
+from . import models
 
 class BaseListView(generics.ListAPIView):
     """
-    abstract class that adds querystring year search to all 
-    generics.ListAPIView views using querystring params. 
+    abstract class that adds querystring year search to all
+    generics.ListAPIView views using querystring params.
 
-    Ex. 
+    Ex.
     http://example.com/homeless/<endpoint_name>/?year=2015
     """
 
@@ -55,7 +55,7 @@ class ListHomelessindividuals(BaseListView):
 
 class ListVeterans(BaseListView):
     queryset = models.Veterans.objects.all()
-    serializer_class = serializers.VeteransSerializer 
+    serializer_class = serializers.VeteransSerializer
 
 
 class ListAgeHouseComp(BaseListView):
@@ -81,3 +81,19 @@ class ListLengthOfHomelessness(BaseListView):
 class ListSleepingLocation(BaseListView):
     queryset = models.SleepingLocation.objects.all()
     serializer_class = serializers.SleepingLocationSerializer
+
+class ListAcsage(BaseListView):
+    queryset = models.Acsage.objects.all()
+    serializer_class = serializers.AcsageSerializer
+
+class ListAcsdisability(BaseListView):
+    queryset = models.Acsdisability.objects.all()
+    serializer_class = serializers.AcsdisabilitySerializer
+
+class ListAcsrace(BaseListView):
+    queryset = models.Acsrace.objects.all()
+    serializer_class = serializers.AcsraceSerializer
+
+class ListAcsveteran(BaseListView):
+    queryset = models.Acsveteran.objects.all()
+    serializer_class = serializers.AcsveteranSerializer

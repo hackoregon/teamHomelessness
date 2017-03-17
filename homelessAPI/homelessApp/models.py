@@ -6,7 +6,7 @@ class BaseModel(models.Model):
     count = models.IntegerField(blank=True, null=True)
     year = models.IntegerField(blank=True, null=True)
     page = models.IntegerField(blank=True, null=True)
-    
+
     class Meta:
         abstract = True
 
@@ -72,21 +72,21 @@ class ChronicHomelessness(BaseModel):
     chronichomelessnesstype = models.CharField(max_length=255)
     sheltertype = models.CharField(max_length=255)
 
-    class Meta: 
+    class Meta:
         db_table = 'chronichomelessness'
 
 
 class DomesticViolence(BaseModel):
     sheltertype = models.CharField(max_length=255)
 
-    class Meta: 
+    class Meta:
         db_table = 'domesticviolence'
 
 
 class SleepingLocation(BaseModel):
     sleepinglocation = models.CharField(max_length=255)
 
-    class Meta: 
+    class Meta:
         db_table = 'sleepinglocation'
 
 
@@ -97,13 +97,13 @@ class LengthOfHomelessness(BaseModel):
         db_table = 'lengthofhomelessness'
 
 # ------------------------------------------------------------------
-# ACS models 
+# ACS models
 
 class Acsage(models.Model):
     acsid = models.CharField(max_length=1000, blank=True, null=True)
     geoid = models.CharField(max_length=255, blank=True, null=True)
-    sex = models.CharField(max_length=25, blank=True, null=True)
-    age = IntegerRangeField(null=True)  
+#    sex = models.CharField(max_length=25, blank=True, null=True)
+    age = IntegerRangeField(null=True)
     count = models.IntegerField()
     year = models.IntegerField()
     sourcefile = models.CharField(max_length=255, blank=True, null=True)
@@ -146,10 +146,3 @@ class Acsveteran(models.Model):
 
     class Meta:
         db_table = 'acsveteran'
-
-
-
-
-
-
-
