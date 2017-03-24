@@ -67,22 +67,38 @@ class SleepingLocationSerializer(serializers.ModelSerializer):
         model = models.SleepingLocation
         fields = '__all__'
 
+
 class AcsageSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Acsage
         fields = '__all__'
+
 
 class AcsdisabilitySerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Acsdisability
         fields = '__all__'
 
+
 class AcsraceSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Acsrace
         fields = '__all__'
 
+
 class AcsveteranSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Acsveteran
+        fields = '__all__'
+
+
+class PitacscompSerializer(serializers.ModelSerializer):
+    class Meta: 
+        model = models.Pitacscomp
+        fields = '__all__'
+
+
+class PitacsethcompSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Pitacsethcomp
         fields = '__all__'

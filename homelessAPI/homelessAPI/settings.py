@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = project_config.DJANGO_SECRET
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     'django_nose',
     'homelessApp',
-    #'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -141,7 +140,3 @@ STATIC_ROOT = BASE_DIR + STATIC_URL
 #     '--cover-package=homelessApp',
 #     '--cover-html'
 # ]
-
-# REST_FRAMEWORK = {
-#     'DEFAULT_FILTER_BACKENDS': ('rest_framework.filters.DjangoFilterBackend',)
-# }

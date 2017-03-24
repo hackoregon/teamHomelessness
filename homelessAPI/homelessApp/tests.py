@@ -212,3 +212,11 @@ class BasicEndpointsTest(TestCase):
     def test_root_get_request_sends_200(self):
         response = self.c.get("/homeless/")
         self.assertEqual(response.status_code, 200)
+
+    def test_pitacs_get_request_sends_200(self):
+        response = self.c.get("/homeless/pitacs/")
+        self.assertEqual(response.status_code, 200)
+
+    def test_pitacseth_get_request_sends_200(self):
+        response = self.c.get("/homeless/pitacseth/")
+        self.assertEqual(response.status_code, 200)

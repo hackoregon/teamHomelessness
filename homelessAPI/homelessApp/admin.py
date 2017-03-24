@@ -6,7 +6,7 @@ from . import models as m
 homeless_models = [m.AgeHouseComposition, m.Disability, m.Ethnicity, 
                    m.GeographicLocation, m.HomelessIndividuals, m.Veterans,
                    m.ChronicHomelessness, m.DomesticViolence, m.SleepingLocation,
-                   m.LengthOfHomelessness]
+                   m.LengthOfHomelessness, m.Pitacscomp, m.Pitacsethcomp]
 
 
 admin.site.register(homeless_models)
