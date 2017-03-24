@@ -37,8 +37,8 @@ class Migration(migrations.Migration):
                 'db_table': 'pitacsethcomp',
             },
         ),
-        migrations.RemoveField(
-            model_name='acsage',
-            name='sex',
-        ),
+        # migrations.RemoveField(
+        #     model_name='acsage',
+        #     name='sex',
+        # ),
     ]
