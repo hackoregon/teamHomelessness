@@ -91,3 +91,14 @@ class AcsveteranSerializer(serializers.ModelSerializer):
         model = models.Acsveteran
         fields = '__all__'
 
+
+class PitacscompSerializer(serializers.ModelSerializer):
+    class Meta: 
+        model = models.Pitacscomp
+        fields = '__all__'
+
+
+class PitacsethcompSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Pitacsethcomp
+        fields = '__all__'
