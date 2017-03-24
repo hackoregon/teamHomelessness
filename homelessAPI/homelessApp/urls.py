@@ -22,4 +22,6 @@ urlpatterns = [
     url(r'^acsdisability/$', views.ListAcsdisability.as_view()),
     url(r'^acsrace/$', views.ListAcsrace.as_view()),
     url(r'^acsveteran/$', views.ListAgeHouseComp.as_view()),
+    url(r'^pitacs/$', views.ListPitacscomp.as_view()),
+    url(r'^pitacseth/$', views.ListPitacsethcomp.as_view()),
 ]
