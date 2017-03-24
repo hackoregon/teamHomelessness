@@ -157,6 +157,23 @@ class ListSleepingLocation(BaseListView):
     queryset = models.SleepingLocation.objects.all()
     serializer_class = serializers.SleepingLocationSerializer
 
+
+class ListPitacscomp(generics.ListAPIView):
+    """
+    Returns percentage differences between the homeless and general Multnomah population for age and gender
+    """
+    queryset = models.Pitacscomp.objects.all()
+    serializer_class = serializers.PitacscompSerializer
+
+
+class ListPitacsethcomp(generics.ListAPIView):
+    """
+    Returns the percentage breakdowns of ethnicity from the homeless, those living in poverty, and general Multnomah county populations  
+    """
+    queryset = models.Pitacsethcomp.objects.all()
+    serializer_class = serializers.PitacsethcompSerializer
+
+
 class ListAcsage(generics.ListAPIView):
     queryset = models.Acsage.objects.all()
     serializer_class = serializers.AcsageSerializer
