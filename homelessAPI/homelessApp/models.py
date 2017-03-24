@@ -110,10 +110,26 @@ class LengthOfHomelessness(BaseModel):
 # ------------------------------------------------------------------
 # ACS models
 
+class Pitacscomp(models.Model):
+    comp_name = models.CharField(max_length=255)
+    pit_percent = models.FloatField()
+    acs_percent = models.FloatField()
+
+    class Meta:
+        db_table = 'pitacscomp'
+
+class Pitacsethcomp(models.Model):
+    ethnicity = models.CharField(max_length=255)
+    hud_homeless = models.FloatField(blank=True, null=True)
+    mult_poverty = models.FloatField(blank=True, null=True)
+    mult_general = models.FloatField(blank=True, null=True)
+
+    class Meta:
+        db_table = 'pitacsethcomp'
+
 class Acsage(models.Model):
     acsid = models.CharField(max_length=1000, blank=True, null=True)
     geoid = models.CharField(max_length=255, blank=True, null=True)
-#    sex = models.CharField(max_length=25, blank=True, null=True)
     age = IntegerRangeField(null=True)
     count = models.IntegerField()
     year = models.IntegerField()
