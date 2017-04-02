@@ -27,7 +27,7 @@ SECRET_KEY = project_config.DJANGO_SECRET
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = project_config.ALLOWED_HOSTS
 
 
 # Application definition

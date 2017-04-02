@@ -5,5 +5,5 @@ VOLUME /code
 WORKDIR /code
 ADD requirements.txt /code/
 RUN pip install -r requirements.txt
-RUN python
 ADD . /code/
+ENTRYPOINT [ "/code/bin/docker-entrypoint.sh" ]
