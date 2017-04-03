@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import requests
 from . import project_config
 
 
@@ -27,7 +28,22 @@ SECRET_KEY = project_config.DJANGO_SECRET
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.99.100'] # Have to hard-code these rather than read from project_config because someone keeps removing this entry from project_config.py
+
+AWS_LOAD_BALANCER='hacko-integration-658279555.us-west-2.elb.amazonaws.com'
+
+ALLOWED_HOSTS.append(AWS_LOAD_BALANCER)
+
+# Get the IPV4 address we're working with on AWS
+# The Loadbalancer uses this ip address for healthchecks
+EC2_PRIVATE_IP = None
+try:
+    EC2_PRIVATE_IP = requests.get('http://169.254.169.254/latest/meta-data/local-ipv4', timeout=0.01).text
+except requests.exceptions.RequestException:
+    pass
+
+if EC2_PRIVATE_IP:
+    ALLOWED_HOSTS.append(EC2_PRIVATE_IP)
 
 
 # Application definition
@@ -127,8 +143,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATIC_URL = "/static/"
-STATIC_ROOT = BASE_DIR + STATIC_URL
+STATIC_URL = "/homeless/static/"
+STATIC_ROOT = 'staticfiles'
 #STATIC_ROOT = BASE_DIR + '/homelessApp/static/'
 
 # # testing setup

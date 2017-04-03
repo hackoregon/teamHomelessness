@@ -1,5 +1,6 @@
 #!/bin/bash
+export PATH=$PATH:~/.local/bin
+./$PROJ_SETTINGS_DIR/bin/getconfig.sh
 python manage.py migrate --noinput
 python manage.py collectstatic --noinput
-#python manage.py runserver
-gunicorn homelessAPI.wsgi:application -b :8000
+gunicorn homelessAPI.wsgi:application -b :8000 --worker-class 'gevent' --workers 3
