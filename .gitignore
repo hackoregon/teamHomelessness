@@ -3,5 +3,7 @@ secrets.sh
 *.pyc
 venv3
 .DS_Store
-.*
 cover
+env.sh
+static/
+staticfiles

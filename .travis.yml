@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+install:
+  - pip install --upgrade --user awscli
+before_script:
+  - ./homelessAPI/bin/getconfig.sh
+script:
+  - './homelessAPI/bin/test-proj.sh -t'
+after_success:
+#  - ./homelessAPI/bin/docker-push.sh
