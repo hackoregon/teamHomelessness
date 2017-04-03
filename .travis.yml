@@ -8,4 +8,4 @@ before_script:
 script:
   - './homelessAPI/bin/test-proj.sh -t'
 after_success:
-#  - ./homelessAPI/bin/docker-push.sh
+  - ./homelessAPI/bin/docker-push.sh
