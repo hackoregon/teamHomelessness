@@ -11,3 +11,5 @@ At the minute, it’s a running list of rules intended to keep us consistent. If
 1. Use “people experiencing homelessness” rather than “the homeless” or “homeless people” whenever possible. 
 
 2. All numbered years should be listed from earliest to most recent.
+
+3. Be clear about whether homeless means "unsheltered" or otherwise homeless
