@@ -29,5 +29,3 @@ else
   echo "#### CONFIG COPY COMPLETE ###"
 
 fi
-
-ls -la homelessAPI/ # troubleshooting why project_config can't be imported
