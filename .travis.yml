@@ -1,6 +1,8 @@
 sudo: required
 services:
   - docker
+install:
+  - pip install --upgrade --user awscli
 script:
   - './homelessAPI/bin/test-proj.sh -t'
 after_success:

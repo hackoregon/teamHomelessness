@@ -30,4 +30,4 @@ else
 
 fi
 
-ls -la homelessAPI/homelessAPI/ # troubleshooting why project_config can't be imported
+ls -la homelessAPI/ # troubleshooting why project_config can't be imported
