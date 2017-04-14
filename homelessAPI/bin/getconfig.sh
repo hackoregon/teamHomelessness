@@ -24,11 +24,11 @@ else
     export PATH=$PATH:~/.local/bin # necessary to help locate the awscli binaries which are pip installed --user
     aws s3 cp \
           s3://$CONFIG_BUCKET/$DEPLOY_TARGET/$CONFIG_FILE \
-          homelessAPI/$CONFIG_FILE;
+          homelessAPI/homelessAPI/$CONFIG_FILE;
 
   echo "#### CONFIG COPY COMPLETE ###"
 
   ls -la homelessAPI
-  ls -la /code
+  ls -la homelessAPI/homelessAPI
 
 fi
