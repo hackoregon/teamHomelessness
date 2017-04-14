@@ -28,7 +28,4 @@ else
 
   echo "#### CONFIG COPY COMPLETE ###"
 
-  ls -la homelessAPI
-  ls -la homelessAPI/homelessAPI
-
 fi
