@@ -13,6 +13,7 @@ export AWS_REGION=
 export AWS_KEY_PAIR=
 export DOCKER_REPO="845828040396.dkr.ecr.us-west-2.amazonaws.com"
 export DOCKER_WEB_IMAGE=homeless-api
+export DEPLOY_TARGET="integration"
 echo "##############################"
 echo  Your Environment
 echo "##############################"

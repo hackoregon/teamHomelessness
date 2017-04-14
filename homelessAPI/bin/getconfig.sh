@@ -24,10 +24,8 @@ else
     export PATH=$PATH:~/.local/bin # necessary to help locate the awscli binaries which are pip installed --user
     aws s3 cp \
           s3://$CONFIG_BUCKET/$DEPLOY_TARGET/$CONFIG_FILE \
-          homelessAPI/$CONFIG_FILE;
+          homelessAPI/homelessAPI/$CONFIG_FILE;
 
   echo "#### CONFIG COPY COMPLETE ###"
 
 fi
-
-ls -la homelessAPI/homelessAPI/ # troubleshooting why project_config can't be imported

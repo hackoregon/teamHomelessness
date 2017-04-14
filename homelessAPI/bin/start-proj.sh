@@ -14,7 +14,7 @@ while getopts ":lt" opt; do
     case "$opt" in
         l)
           # This is an unfortunate workaround to the subdirectory that is used to contain all app code
-          source ./bin/env.sh
+          source ./homelessAPI/bin/env.sh
           docker-compose -f $PROJ_SETTINGS_DIR/local-docker-compose.yml up --build
           ;;
         t)
