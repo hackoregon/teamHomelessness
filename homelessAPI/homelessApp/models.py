@@ -177,6 +177,14 @@ class Acsveteran(models.Model):
 # ------------------------------------------------------------------------
 # 211 data 
 
+class BinnedAge211(models.Model):
+    age_range = IntegerRangeField()
+    freq = models.IntegerField(blank=True, null=True)
+
+    class Meta:
+        db_table = 'binned_age_211'
+
+
 class Gender211(models.Model):
     gender = models.CharField(max_length=255, blank=True, null=True)
     freq = models.IntegerField(blank=True, null=True)
@@ -208,11 +216,3 @@ class Service211(models.Model):
 
     class Meta:
         db_table = 'service_211'
-
-
-class BinnedAge211(models.Model):
-    age_range = IntegerRangeField()
-    freq = models.IntegerField(blank=True, null=True)
-
-    class Meta:
-        db_table = 'binned_age_211'

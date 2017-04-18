@@ -157,6 +157,8 @@ class ListSleepingLocation(BaseListView):
     queryset = models.SleepingLocation.objects.all()
     serializer_class = serializers.SleepingLocationSerializer
 
+# -------------------------------------------------------------------
+# acs views
 
 class ListPitacscomp(generics.ListAPIView):
     """
@@ -189,3 +191,45 @@ class ListAcsrace(generics.ListAPIView):
 class ListAcsveteran(generics.ListAPIView):
     queryset = models.Acsveteran.objects.all()
     serializer_class = serializers.AcsveteranSerializer
+
+# -------------------------------------------------------------------
+# 211 views
+
+class ListBinnedAge211(generics.ListAPIView):
+    """
+    Returns 211 data with the age breakdown of people using the service
+    """
+    queryset = models.BinnedAge211.objects.all()
+    serializer_class = serializers.BinnedAge211Serializer
+
+
+class ListGender211(generics.ListAPIView):
+    """
+    Returns 211 data with the gender breakdown of people using the service
+    """
+    queryset = models.Gender211.objects.all()
+    serializer_class = serializers.Gender211Serializer
+
+
+class ListMilitary211(generics.ListAPIView):
+    """
+    Returns 211 data with the military status of those using the service
+    """
+    queryset = models.Military211.objects.all()
+    serializer_class = serializers.Military211Serializer
+
+
+class ListMonthDemand211(generics.ListAPIView):
+    """
+    Returns the counts of how many times 211 was used by month
+    """
+    queryset = models.MonthDemand211.objects.all()
+    serializer_class = serializers.MonthDemand211Serializer
+
+
+class ListService211(generics.ListAPIView):
+    """
+    Returns information about the types of services 211 provided
+    """
+    queryset = models.Service211.objects.all()
+    serializer_class = serializers.Service211Serializer

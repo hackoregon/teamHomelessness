@@ -102,3 +102,33 @@ class PitacsethcompSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Pitacsethcomp
         fields = '__all__'
+
+
+class BinnedAge211Serializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.BinnedAge211
+        fields = '__all__'
+
+
+class Gender211Serializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Gender211
+        fields = '__all__'
+
+
+class Military211Serializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Military211
+        fields = '__all__'
+
+
+class MonthDemand211Serializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.MonthDemand211
+        fields = '__all__'
+
+
+class Service211Serializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Service211
+        fields = '__all__'

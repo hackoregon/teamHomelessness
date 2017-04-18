@@ -3,7 +3,6 @@ def col_dtype_dict():
     return a dict that maps col names to correct data type 
     """
     dtype_dict = {
-        
         "age": "int4range",
         "ageRange": "VARCHAR(255)",
         "count": "INTEGER",
@@ -15,8 +14,12 @@ def col_dtype_dict():
         "page": "INTEGER",
         "shelterType": "VARCHAR(255) NOT NULL",
         "veteran": "VARCHAR(255)",
-        "year": "INTEGER",        
-        
+        "year": "INTEGER",
+        "month": "INTEGER",
+        "service_name": "VARCHAR(255)",
+        "freq": "INTEGER",
+        "status": "VARCHAR(255)",
+        "age_range": "int4range"
     }
 
     return dtype_dict

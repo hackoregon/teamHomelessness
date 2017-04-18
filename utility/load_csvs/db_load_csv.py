@@ -47,7 +47,7 @@ def csv_loader(csv_path):
         table_match = table_name_regex.search(csv_path)
 
         try:
-            table_name = table_match.group(0) 
+            table_name = "service_211" #table_match.group(0) 
         except: 
             raise ValueError("regex failed in table name extract")
 
@@ -89,10 +89,15 @@ def load_data_into_table(csv_path, headers, table_name, cursor):
     write each row to table in DB, wrap every string value in quotes for SQL 
     """
     with open(csv_path, "r") as csv_file:
+        print("*" * 90)
+        print(csv_file)
+        print("*" * 90)
+
         # need to skip line with headers 
-        csv_file.next()
+        throw_away = csv_file.readline()
         
-        for line in csv_file:  
+        for line in csv_file: 
+            print(line) 
             # ----------------------------------------------------
             # need to wrap any string values in quotes to avoid SQL error 
             line_split = line.split(",")
@@ -100,18 +105,20 @@ def load_data_into_table(csv_path, headers, table_name, cursor):
             pattern = r'([a-z])\w+'
 
             for item in line_split:
-
                 if re.match(pattern, item, re.IGNORECASE):
+                    print("inside regex match")
                     new_line.append("'{}'".format(item))
                 elif item == '':
                     new_line.append("NULL")
                 else:  
+                    print("inside load data else clause")
                     new_line.append(item)
 
             new_line = ','.join(new_line)
             # ----------------------------------------------------
 
             sql = "INSERT INTO {} ({}) VALUES ({});".format(table_name, headers, new_line)
+            print(sql)
 
             cursor.execute(sql)
 
@@ -129,14 +136,14 @@ def interface(target_db, csv_path):
     # extract headers and table names 
     headers, table_name = csv_loader(csv_path)
 
-    # drop table if an old one is present 
-    drop_command = drop_table(table_name)
-    cursor.execute(drop_command)
+    # # drop table if an old one is present 
+    # drop_command = drop_table(table_name)
+    # cursor.execute(drop_command)
 
-    # create new table 
-    create_command = create_table(table_name, headers)
-    cursor.execute(create_command)
-    conn.commit()
+    # # create new table 
+    # create_command = create_table(table_name, headers)
+    # cursor.execute(create_command)
+    # conn.commit()
 
     # transform and load rows 
     load_data_into_table(csv_path, headers, table_name, cursor)
