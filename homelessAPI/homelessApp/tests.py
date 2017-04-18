@@ -220,3 +220,26 @@ class BasicEndpointsTest(TestCase):
     def test_pitacseth_get_request_sends_200(self):
         response = self.c.get("/homeless/pitacseth/")
         self.assertEqual(response.status_code, 200)
+
+    # -----------------------------------------------------------------
+    # 211 simple tests 
+
+    def test_age_211_get_request_sends_200(self):
+        response = self.c.get("/homeless/age211/")
+        self.assertEqual(response.status_code, 200)
+
+    def test_gender_211_get_request_sends_200(self):
+        response = self.c.get("/homeless/gender211/")
+        self.assertEqual(response.status_code, 200)
+
+    def test_military_211_get_request_sends_200(self):
+        response = self.c.get("/homeless/military211/")
+        self.assertEqual(response.status_code, 200)
+
+    def test_month_211_get_request_sends_200(self):
+        response = self.c.get("/homeless/month211/")
+        self.assertEqual(response.status_code, 200)
+
+    def test_service_211_get_request_sends_200(self):
+        response = self.c.get("/homeless/service211/")
+        self.assertEqual(response.status_code, 200)
