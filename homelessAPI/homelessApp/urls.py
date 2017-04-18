@@ -24,4 +24,9 @@ urlpatterns = [
     url(r'^acsveteran/$', views.ListAgeHouseComp.as_view()),
     url(r'^pitacs/$', views.ListPitacscomp.as_view()),
     url(r'^pitacseth/$', views.ListPitacsethcomp.as_view()),
+    url(r'^age211/$', views.ListBinnedAge211.as_view()),
+    url(r'^gender211/$', views.ListGender211.as_view()),
+    url(r'^military211/$', views.ListMilitary211.as_view()),
+    url(r'^month211/$', views.ListMonthDemand211.as_view()),
+    url(r'^service211/$', views.ListService211.as_view()),
 ]

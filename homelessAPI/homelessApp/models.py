@@ -173,3 +173,46 @@ class Acsveteran(models.Model):
 
     class Meta:
         db_table = 'acsveteran'
+
+# ------------------------------------------------------------------------
+# 211 data 
+
+class BinnedAge211(models.Model):
+    age_range = IntegerRangeField()
+    freq = models.IntegerField(blank=True, null=True)
+
+    class Meta:
+        db_table = 'binned_age_211'
+
+
+class Gender211(models.Model):
+    gender = models.CharField(max_length=255, blank=True, null=True)
+    freq = models.IntegerField(blank=True, null=True)
+
+    class Meta:
+        db_table = 'gender_211'
+
+
+class Military211(models.Model):
+    status = models.CharField(max_length=255, blank=True, null=True)
+    freq = models.IntegerField(blank=True, null=True)
+
+    class Meta:
+        db_table = 'military_211'
+
+
+class MonthDemand211(models.Model):
+    month = models.IntegerField(blank=True, null=True)
+    year = models.IntegerField(blank=True, null=True)
+    freq = models.IntegerField(blank=True, null=True)
+
+    class Meta:
+        db_table = 'month_demand_211'
+
+
+class Service211(models.Model):
+    service_name = models.CharField(max_length=255, blank=True, null=True)
+    freq = models.IntegerField(blank=True, null=True)
+
+    class Meta:
+        db_table = 'service_211'
