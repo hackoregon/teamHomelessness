@@ -47,7 +47,6 @@ class ListGender(generics.ListAPIView):
     filter_class = filters.GenderFilter
 
 
-
 class ListGeographiclocation(generics.ListAPIView):
     """
     Returns geographic data from 2007 - 2015 PIT reports on odd years 
