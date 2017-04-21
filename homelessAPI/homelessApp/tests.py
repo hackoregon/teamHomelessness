@@ -8,6 +8,10 @@ class BasicEndpointsTest(TestCase):
     def setUp(self):
         self.c = Client()
 
+    def test_root_get_request_sends_200(self):
+        response = self.c.get("/homeless/")
+        self.assertEqual(response.status_code, 200)
+
     def test_disability_get_request_sends_200(self):
         response = self.c.get("/homeless/disability/")
         self.assertEqual(response.status_code, 200)
@@ -157,61 +161,57 @@ class BasicEndpointsTest(TestCase):
         for year in years:
             self.assertEqual(year, 2015)
 
-    def test_acsage_get_request_sends_200(self):
-        response = self.c.get("/homeless/acsage/")
-        self.assertEqual(response.status_code, 200)
+    # def test_acsage_get_request_sends_200(self):
+    #     response = self.c.get("/homeless/acsage/")
+    #     self.assertEqual(response.status_code, 200)
 
-    def test_acsage_get_request_works_with_query_param(self):
-        response = self.c.get("/homeless/acsage/?year=2015")
-        self.assertEqual(response.status_code, 200)
-        json_content = json.loads(response.content.decode('utf-8'))
-        years = [item["year"] for item in json_content]
+    # def test_acsage_get_request_works_with_query_param(self):
+    #     response = self.c.get("/homeless/acsage/?year=2015")
+    #     self.assertEqual(response.status_code, 200)
+    #     json_content = json.loads(response.content.decode('utf-8'))
+    #     years = [item["year"] for item in json_content]
 
-        for year in years:
-            self.assertEqual(year, 2015)
+    #     for year in years:
+    #         self.assertEqual(year, 2015)
 
-    def test_acsdisability_get_request_sends_200(self):
-        response = self.c.get("/homeless/acsdisability/")
-        self.assertEqual(response.status_code, 200)
+    # def test_acsdisability_get_request_sends_200(self):
+    #     response = self.c.get("/homeless/acsdisability/")
+    #     self.assertEqual(response.status_code, 200)
 
-    def test_acsdisability_get_request_works_with_query_param(self):
-        response = self.c.get("/homeless/acsdisability/?year=2015")
-        self.assertEqual(response.status_code, 200)
-        json_content = json.loads(response.content.decode('utf-8'))
-        years = [item["year"] for item in json_content]
+    # def test_acsdisability_get_request_works_with_query_param(self):
+    #     response = self.c.get("/homeless/acsdisability/?year=2015")
+    #     self.assertEqual(response.status_code, 200)
+    #     json_content = json.loads(response.content.decode('utf-8'))
+    #     years = [item["year"] for item in json_content]
 
-        for year in years:
-            self.assertEqual(year, 2015)
+    #     for year in years:
+    #         self.assertEqual(year, 2015)
 
-    def test_acsrace_get_request_sends_200(self):
-        response = self.c.get("/homeless/acsrace/")
-        self.assertEqual(response.status_code, 200)
+    # def test_acsrace_get_request_sends_200(self):
+    #     response = self.c.get("/homeless/acsrace/")
+    #     self.assertEqual(response.status_code, 200)
 
-    def test_acsrace_get_request_works_with_query_param(self):
-        response = self.c.get("/homeless/acsrace/?year=2015")
-        self.assertEqual(response.status_code, 200)
-        json_content = json.loads(response.content.decode('utf-8'))
-        years = [item["year"] for item in json_content]
+    # def test_acsrace_get_request_works_with_query_param(self):
+    #     response = self.c.get("/homeless/acsrace/?year=2015")
+    #     self.assertEqual(response.status_code, 200)
+    #     json_content = json.loads(response.content.decode('utf-8'))
+    #     years = [item["year"] for item in json_content]
 
-        for year in years:
-            self.assertEqual(year, 2015)
+    #     for year in years:
+    #         self.assertEqual(year, 2015)
 
-    def test_acsveteran_get_request_sends_200(self):
-        response = self.c.get("/homeless/acsveteran/")
-        self.assertEqual(response.status_code, 200)
+    # def test_acsveteran_get_request_sends_200(self):
+    #     response = self.c.get("/homeless/acsveteran/")
+    #     self.assertEqual(response.status_code, 200)
 
-    def test_acsveteran_get_request_works_with_query_param(self):
-        response = self.c.get("/homeless/acsveteran/?year=2015")
-        self.assertEqual(response.status_code, 200)
-        json_content = json.loads(response.content.decode('utf-8'))
-        years = [item["year"] for item in json_content]
+    # def test_acsveteran_get_request_works_with_query_param(self):
+    #     response = self.c.get("/homeless/acsveteran/?year=2015")
+    #     self.assertEqual(response.status_code, 200)
+    #     json_content = json.loads(response.content.decode('utf-8'))
+    #     years = [item["year"] for item in json_content]
 
-        for year in years:
-            self.assertEqual(year, 2015)
-
-    def test_root_get_request_sends_200(self):
-        response = self.c.get("/homeless/")
-        self.assertEqual(response.status_code, 200)
+    #     for year in years:
+    #         self.assertEqual(year, 2015)
 
     def test_pitacs_get_request_sends_200(self):
         response = self.c.get("/homeless/pitacs/")
