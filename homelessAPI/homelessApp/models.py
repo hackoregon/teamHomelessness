@@ -127,6 +127,8 @@ class Pitacsethcomp(models.Model):
     class Meta:
         db_table = 'pitacsethcomp'
 
+# ------------------------------------------------------------------
+# acs models below aren't currently being used in favor of the ones above
 class Acsage(models.Model):
     acsid = models.CharField(max_length=1000, blank=True, null=True)
     geoid = models.CharField(max_length=255, blank=True, null=True)

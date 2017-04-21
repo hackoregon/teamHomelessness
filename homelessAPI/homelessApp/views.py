@@ -5,30 +5,12 @@ from rest_framework.reverse import reverse
 
 from . import serializers
 from . import models
+from . import filters
 
-class BaseListView(generics.ListAPIView):
+
+class ListDisability(generics.ListAPIView):
     """
-    abstract class that adds query string year search to all
-    generics.ListAPIView views using querystring params.
-
-    Ex.
-    http://example.com/homeless/<endpoint_name>/?year=2015
-    """
-
-    def get_queryset(self):
-        queryset = self.queryset.all()
-        year_url = self.request.query_params.get('year', None)
-
-        if year_url is not None:
-            queryset = queryset.filter(year__exact=year_url)
-        return queryset
-
-    class Meta:
-        abstract = True
-
-class ListDisability(BaseListView):
-    """
-    Returns disability data from 2007 - 2015 PIT reports on odd years 
+    Returns disability data from 2009 - 2015 PIT reports on odd years 
 
     Optionally to filter by year pass in a query string parameter called 'year'
 
@@ -36,11 +18,12 @@ class ListDisability(BaseListView):
     """
     queryset = models.Disability.objects
     serializer_class = serializers.DisabilitySerializer
+    filter_class = filters.DisabilityFilter
 
 
-class ListEthnicity(BaseListView):
+class ListEthnicity(generics.ListAPIView):
     """
-    Returns ethnicity data from 2007 - 2015 PIT reports on odd years 
+    Returns ethnicity data from 2009 - 2015 PIT reports on odd years 
 
     Optionally to filter by year pass in a query string parameter called 'year'
 
@@ -48,11 +31,12 @@ class ListEthnicity(BaseListView):
     """
     queryset = models.Ethnicity.objects.all()
     serializer_class = serializers.EthnicitySerializer
+    filter_class = filters.EthnicityFilter
 
 
-class ListGender(BaseListView):
+class ListGender(generics.ListAPIView):
     """
-    Returns gender data from 2007 - 2015 PIT reports on odd years 
+    Returns gender data from 2009 - 2015 PIT reports on odd years 
 
     Optionally to filter by year pass in a query string parameter called 'year'
 
@@ -60,11 +44,12 @@ class ListGender(BaseListView):
     """
     queryset = models.Gender.objects.all()
     serializer_class = serializers.GenderSerializer
+    filter_class = filters.GenderFilter
 
 
-class ListGeographiclocation(BaseListView):
+class ListGeographiclocation(generics.ListAPIView):
     """
-    Returns geographic data from 2007 - 2015 PIT reports on odd years 
+    Returns geographic data from 2011 - 2015 PIT reports on odd years 
 
     Optionally to filter by year pass in a query string parameter called 'year'
 
@@ -72,11 +57,12 @@ class ListGeographiclocation(BaseListView):
     """
     queryset = models.GeographicLocation.objects.all()
     serializer_class = serializers.GeographicLocationSerializer
+    filter_class = filters.GeographicLocationFilter
 
 
-class ListHomelessindividuals(BaseListView):
+class ListHomelessindividuals(generics.ListAPIView):
     """
-    Returns data about adults vs. children in specific types of shelters from 2007 - 2015 PIT reports on odd years 
+    Returns data about adults vs. children in specific types of shelters from 2009 - 2015 PIT reports on odd years 
 
     Optionally to filter by year pass in a query string parameter called 'year'
 
@@ -84,11 +70,12 @@ class ListHomelessindividuals(BaseListView):
     """
     queryset = models.HomelessIndividuals.objects.all()
     serializer_class = serializers.HomelessIndividualsSerializer
+    filter_class = filters.HomelessIndividualsFilter
 
 
-class ListVeterans(BaseListView):
+class ListVeterans(generics.ListAPIView):
     """
-    Returns data about veterans from 2007 - 2015 PIT reports on odd years 
+    Returns data about veterans from 2009 - 2015 PIT reports on odd years 
 
     Optionally to filter by year pass in a query string parameter called 'year'
 
@@ -96,11 +83,12 @@ class ListVeterans(BaseListView):
     """
     queryset = models.Veterans.objects.all()
     serializer_class = serializers.VeteransSerializer
+    filter_class = filters.VeteransFilter
 
 
-class ListAgeHouseComp(BaseListView):
+class ListAgeHouseComp(generics.ListAPIView):
     """
-    Returns data about the age house composition from 2007 - 2015 PIT reports on odd years 
+    Returns data about the age house composition from 2009 - 2015 PIT reports on odd years 
 
     Optionally to filter by year pass in a query string parameter called 'year'
 
@@ -108,11 +96,12 @@ class ListAgeHouseComp(BaseListView):
     """
     queryset = models.AgeHouseComposition.objects.all()
     serializer_class = serializers.AgeHouseCompositionSerializer
+    filter_class = filters.AgeHouseCompositionFilter
 
 
-class ListChronicHomelessness(BaseListView):
+class ListChronicHomelessness(generics.ListAPIView):
     """
-    Returns data chronic homelessness from 2007 - 2015 PIT reports on odd years 
+    Returns data chronic homelessness from 2013 - 2015 PIT reports on odd years 
 
     Optionally to filter by year pass in a query string parameter called 'year'
 
@@ -120,11 +109,12 @@ class ListChronicHomelessness(BaseListView):
     """
     queryset = models.ChronicHomelessness.objects.all()
     serializer_class = serializers.ChronicHomelessnessSerializer
+    filter_class = filters.ChronicHomelessnessFilter
 
 
-class ListDomesticViolence(BaseListView):
+class ListDomesticViolence(generics.ListAPIView):
     """
-    Returns data about domestic violence from 2007 - 2015 PIT reports on odd years 
+    Returns data about domestic violence from 2011 - 2015 PIT reports on odd years 
 
     Optionally to filter by year pass in a query string parameter called 'year'
 
@@ -132,11 +122,12 @@ class ListDomesticViolence(BaseListView):
     """
     queryset = models.DomesticViolence.objects.all()
     serializer_class = serializers.DomesticViolenceSerializer
+    filter_class = filters.DomesticViolenceFilter
 
 
-class ListLengthOfHomelessness(BaseListView):
+class ListLengthOfHomelessness(generics.ListAPIView):
     """
-    Returns data about the length of time people have been homeless from 2007 - 2015 PIT reports on odd years 
+    Returns data about the length of time people have been homeless from 2011 - 2015 PIT reports on odd years 
 
     Optionally to filter by year pass in a query string parameter called 'year'
 
@@ -144,11 +135,12 @@ class ListLengthOfHomelessness(BaseListView):
     """
     queryset = models.LengthOfHomelessness.objects.all()
     serializer_class = serializers.LengthOfHomelessnessSerializer
+    filter_class = filters.LengthOfHomelessnessFilter
 
 
-class ListSleepingLocation(BaseListView):
+class ListSleepingLocation(generics.ListAPIView):
     """
-    Returns data about the sleeping locations of the homeless from 2007 - 2015 PIT reports on odd years 
+    Returns data about the sleeping locations of the homeless from 2011 - 2015 PIT reports on odd years 
 
     Optionally to filter by year pass in a query string parameter called 'year'
 
@@ -156,6 +148,7 @@ class ListSleepingLocation(BaseListView):
     """
     queryset = models.SleepingLocation.objects.all()
     serializer_class = serializers.SleepingLocationSerializer
+    filter_class = filters.SleepingLocationFilter
 
 # -------------------------------------------------------------------
 # acs views
@@ -175,7 +168,10 @@ class ListPitacsethcomp(generics.ListAPIView):
     queryset = models.Pitacsethcomp.objects.all()
     serializer_class = serializers.PitacsethcompSerializer
 
-
+# -------------------------------------------------------------------
+# These views are commented out because we're using the above views which
+# return the stats the front end needs with all the comparisons between
+# PIT and ACS pre calculated
 class ListAcsage(generics.ListAPIView):
     queryset = models.Acsage.objects.all()
     serializer_class = serializers.AcsageSerializer
@@ -197,7 +193,7 @@ class ListAcsveteran(generics.ListAPIView):
 
 class ListBinnedAge211(generics.ListAPIView):
     """
-    Returns 211 data with the age breakdown of people using the service
+    Returns 211 data with the age breakdown of people using the service in 2016
     """
     queryset = models.BinnedAge211.objects.all()
     serializer_class = serializers.BinnedAge211Serializer
@@ -205,7 +201,7 @@ class ListBinnedAge211(generics.ListAPIView):
 
 class ListGender211(generics.ListAPIView):
     """
-    Returns 211 data with the gender breakdown of people using the service
+    Returns 211 data with the gender breakdown of people using the service in 2016
     """
     queryset = models.Gender211.objects.all()
     serializer_class = serializers.Gender211Serializer
@@ -213,7 +209,7 @@ class ListGender211(generics.ListAPIView):
 
 class ListMilitary211(generics.ListAPIView):
     """
-    Returns 211 data with the military status of those using the service
+    Returns 211 data with the military status of those using the service in 2016
     """
     queryset = models.Military211.objects.all()
     serializer_class = serializers.Military211Serializer
@@ -221,7 +217,7 @@ class ListMilitary211(generics.ListAPIView):
 
 class ListMonthDemand211(generics.ListAPIView):
     """
-    Returns the counts of how many times 211 was used by month
+    Returns the counts of how many times 211 was used by month in 2016
     """
     queryset = models.MonthDemand211.objects.all()
     serializer_class = serializers.MonthDemand211Serializer
@@ -229,7 +225,7 @@ class ListMonthDemand211(generics.ListAPIView):
 
 class ListService211(generics.ListAPIView):
     """
-    Returns information about the types of services 211 provided
+    Returns information about the types of services 211 provided in 2016
     """
     queryset = models.Service211.objects.all()
     serializer_class = serializers.Service211Serializer
