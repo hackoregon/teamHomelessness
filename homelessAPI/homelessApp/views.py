@@ -7,25 +7,6 @@ from . import serializers
 from . import models
 from . import filters
 
-class BaseListView(generics.ListAPIView):
-    """
-    abstract class that adds query string year search to all
-    generics.ListAPIView views using querystring params.
-
-    Ex.
-    http://example.com/homeless/<endpoint_name>/?year=2015
-    """
-
-    def get_queryset(self):
-        queryset = self.queryset.all()
-        year_url = self.request.query_params.get('year', None)
-
-        if year_url is not None:
-            queryset = queryset.filter(year__exact=year_url)
-        return queryset
-
-    class Meta:
-        abstract = True
 
 class ListDisability(generics.ListAPIView):
     """
