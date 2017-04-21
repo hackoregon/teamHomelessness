@@ -5,6 +5,7 @@ from rest_framework.reverse import reverse
 
 from . import serializers
 from . import models
+from . import filters
 
 class BaseListView(generics.ListAPIView):
     """
@@ -26,7 +27,7 @@ class BaseListView(generics.ListAPIView):
     class Meta:
         abstract = True
 
-class ListDisability(BaseListView):
+class ListDisability(generics.ListAPIView):
     """
     Returns disability data from 2007 - 2015 PIT reports on odd years 
 
@@ -36,9 +37,10 @@ class ListDisability(BaseListView):
     """
     queryset = models.Disability.objects
     serializer_class = serializers.DisabilitySerializer
+    filter_class = filters.DisabilityFilter
 
 
-class ListEthnicity(BaseListView):
+class ListEthnicity(generics.ListAPIView):
     """
     Returns ethnicity data from 2007 - 2015 PIT reports on odd years 
 
@@ -48,9 +50,10 @@ class ListEthnicity(BaseListView):
     """
     queryset = models.Ethnicity.objects.all()
     serializer_class = serializers.EthnicitySerializer
+    filter_class = filters.EthnicityFilter
 
 
-class ListGender(BaseListView):
+class ListGender(generics.ListAPIView):
     """
     Returns gender data from 2007 - 2015 PIT reports on odd years 
 
@@ -60,9 +63,11 @@ class ListGender(BaseListView):
     """
     queryset = models.Gender.objects.all()
     serializer_class = serializers.GenderSerializer
+    filter_class = filters.GenderFilter
 
 
-class ListGeographiclocation(BaseListView):
+
+class ListGeographiclocation(generics.ListAPIView):
     """
     Returns geographic data from 2007 - 2015 PIT reports on odd years 
 
@@ -72,9 +77,10 @@ class ListGeographiclocation(BaseListView):
     """
     queryset = models.GeographicLocation.objects.all()
     serializer_class = serializers.GeographicLocationSerializer
+    filter_class = filters.GeographicLocationFilter
 
 
-class ListHomelessindividuals(BaseListView):
+class ListHomelessindividuals(generics.ListAPIView):
     """
     Returns data about adults vs. children in specific types of shelters from 2007 - 2015 PIT reports on odd years 
 
@@ -84,9 +90,10 @@ class ListHomelessindividuals(BaseListView):
     """
     queryset = models.HomelessIndividuals.objects.all()
     serializer_class = serializers.HomelessIndividualsSerializer
+    filter_class = filters.HomelessIndividualsFilter
 
 
-class ListVeterans(BaseListView):
+class ListVeterans(generics.ListAPIView):
     """
     Returns data about veterans from 2007 - 2015 PIT reports on odd years 
 
@@ -96,9 +103,10 @@ class ListVeterans(BaseListView):
     """
     queryset = models.Veterans.objects.all()
     serializer_class = serializers.VeteransSerializer
+    filter_class = filters.VeteransFilter
 
 
-class ListAgeHouseComp(BaseListView):
+class ListAgeHouseComp(generics.ListAPIView):
     """
     Returns data about the age house composition from 2007 - 2015 PIT reports on odd years 
 
@@ -108,9 +116,10 @@ class ListAgeHouseComp(BaseListView):
     """
     queryset = models.AgeHouseComposition.objects.all()
     serializer_class = serializers.AgeHouseCompositionSerializer
+    filter_class = filters.AgeHouseCompositionFilter
 
 
-class ListChronicHomelessness(BaseListView):
+class ListChronicHomelessness(generics.ListAPIView):
     """
     Returns data chronic homelessness from 2007 - 2015 PIT reports on odd years 
 
@@ -120,9 +129,10 @@ class ListChronicHomelessness(BaseListView):
     """
     queryset = models.ChronicHomelessness.objects.all()
     serializer_class = serializers.ChronicHomelessnessSerializer
+    filter_class = filters.ChronicHomelessnessFilter
 
 
-class ListDomesticViolence(BaseListView):
+class ListDomesticViolence(generics.ListAPIView):
     """
     Returns data about domestic violence from 2007 - 2015 PIT reports on odd years 
 
@@ -132,9 +142,10 @@ class ListDomesticViolence(BaseListView):
     """
     queryset = models.DomesticViolence.objects.all()
     serializer_class = serializers.DomesticViolenceSerializer
+    filter_class = filters.DomesticViolenceFilter
 
 
-class ListLengthOfHomelessness(BaseListView):
+class ListLengthOfHomelessness(generics.ListAPIView):
     """
     Returns data about the length of time people have been homeless from 2007 - 2015 PIT reports on odd years 
 
@@ -144,9 +155,10 @@ class ListLengthOfHomelessness(BaseListView):
     """
     queryset = models.LengthOfHomelessness.objects.all()
     serializer_class = serializers.LengthOfHomelessnessSerializer
+    filter_class = filters.LengthOfHomelessnessFilter
 
 
-class ListSleepingLocation(BaseListView):
+class ListSleepingLocation(generics.ListAPIView):
     """
     Returns data about the sleeping locations of the homeless from 2007 - 2015 PIT reports on odd years 
 
@@ -156,6 +168,7 @@ class ListSleepingLocation(BaseListView):
     """
     queryset = models.SleepingLocation.objects.all()
     serializer_class = serializers.SleepingLocationSerializer
+    filter_class = filters.SleepingLocationFilter
 
 # -------------------------------------------------------------------
 # acs views
