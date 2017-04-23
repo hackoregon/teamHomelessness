@@ -20,3 +20,4 @@ uritemplate==3.0.0
 gunicorn
 gevent==1.2.1
 psycogreen
+whitenoise==3.3.0
