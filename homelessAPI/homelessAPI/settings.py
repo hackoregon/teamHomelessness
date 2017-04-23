@@ -55,10 +55,13 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_swagger',
     'django_nose',
+    'corsheaders',
     'homelessApp',
 ]
 
 MIDDLEWARE = [
+    # CorsMiddleware should be placed as high as possible and before CommonMiddleware response generator
+    'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -151,6 +154,9 @@ STATIC_ROOT = 'staticfiles'
 #STATIC_ROOT = BASE_DIR + '/homelessApp/static/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# This allows any site to call these API endpoints, which is entirely the point of making them available
+CORS_ORIGIN_ALLOW_ALL = True
 
 # # testing setup
 # TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
