@@ -107,6 +107,15 @@ class LengthOfHomelessness(BaseModel):
         db_table = 'lengthofhomelessness'
         verbose_name_plural = 'Length of Homelessness'
 
+
+class HomelessMigration(models.Model):
+    migrationarea = models.CharField(max_length=255)
+    migrationpercent = models.FloatField()
+
+    class Meta:
+        db_table = 'homelessmigration'
+        verbose_name_plural = 'Homeless Migration'
+
 # ------------------------------------------------------------------
 # ACS models
 

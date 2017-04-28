@@ -1,4 +1,4 @@
-appdirs==1.4.0
+appdirs==1.4.3
 coreapi==2.1.1
 coverage==4.3.4
 Django==1.10.5

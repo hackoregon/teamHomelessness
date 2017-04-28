@@ -150,6 +150,14 @@ class ListSleepingLocation(generics.ListAPIView):
     serializer_class = serializers.SleepingLocationSerializer
     filter_class = filters.SleepingLocationFilter
 
+
+class ListHomelessMigration(generics.ListAPIView):
+    """
+    Returns percentages of where homeless individuals from outside of Portland migrated from in 2015.
+    """
+    queryset = models.HomelessMigration.objects.all()
+    serializer_class = serializers.HomelessMigrationSerializer
+
 # -------------------------------------------------------------------
 # acs views
 

@@ -18,6 +18,7 @@ urlpatterns = [
     url(r'^domesticviolence/$', views.ListDomesticViolence.as_view()),
     url(r'^chronic/$', views.ListChronicHomelessness.as_view()),
     url(r'^agehousecomp/$', views.ListAgeHouseComp.as_view()),
+    url(r'^migration/$', views.ListHomelessMigration.as_view()),
     #url(r'^acsage/$', views.ListAcsage.as_view()),
     #url(r'^acsdisability/$', views.ListAcsdisability.as_view()),
     #url(r'^acsrace/$', views.ListAcsrace.as_view()),
