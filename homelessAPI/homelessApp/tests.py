@@ -161,6 +161,10 @@ class BasicEndpointsTest(TestCase):
         for year in years:
             self.assertEqual(year, 2015)
 
+    def test_migration_get_request_sends_200(self):
+        response = self.c.get("/homeless/migration/")
+        self.assertEqual(response.status_code, 200)
+
     # def test_acsage_get_request_sends_200(self):
     #     response = self.c.get("/homeless/acsage/")
     #     self.assertEqual(response.status_code, 200)

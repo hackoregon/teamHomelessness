@@ -32,6 +32,12 @@ class HomelessIndividualsSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class HomelessMigrationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.HomelessMigration
+        fields = '__all__'
+
+
 class VeteransSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Veterans
