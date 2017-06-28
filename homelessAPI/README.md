@@ -1,4 +1,4 @@
-##Instructions to install API and run it locally
+## Instructions to install API and run it locally
 In order to follow these instructions you need to have access to the AWS DB information for our team, and have Python 3, Pip, and Virtualenv installed. If you need this information send a message to @zakkent on the Homelessness team's slack channel.
 
 ### 1. Clone this repo
@@ -33,7 +33,7 @@ DJANGO_SECRET = 'secret key here'
   - ```python manage.py runserver```
   - see working root endpoint at: [http://localhost:8000/homeless/](http://localhost:8000/example/)
 
-##Instructions to install API and run in Docker
+## Instructions to install API and run in Docker
 In order to follow these instructions you need to have access to the AWS DB information for our team and Docker installed If you need this information send a message to @zakkent on the Homelessness team's slack channel.
 
 ### 0. Prerequisites
