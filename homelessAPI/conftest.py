@@ -5,7 +5,7 @@ from homelessAPI import project_config
 
 @pytest.fixture(scope='session')
 def django_db_setup():
-    budget_proj.settings.DATABASES['default'] = {
+    homelessAPI.settings.DATABASES['default'] = {
         'ENGINE': project_config.AWS['ENGINE'],
         'NAME': project_config.AWS['NAME'],
         'HOST': project_config.AWS['HOST'],
