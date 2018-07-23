@@ -22,3 +22,6 @@ gunicorn
 gevent==1.2.1
 psycogreen
 whitenoise==3.3.0
+
+# Testing
+pytest-django==3.2.1
